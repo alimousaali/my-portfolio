@@ -3,7 +3,7 @@
 Welcome to the repository of my personal portfolio website. This project showcases my journey, skills, and projects as a **Data Analyst** and **Junior Data Scientist**.
 
 ## 🚀 Live Demo
-You can view the live site here: [Your Link Here - e.g., https://yourusername.github.io/]
+You can view the live site here: [(https://alimousaali.github.io/my-portfolio/)]
 
 ## 🌟 About the Project
 This is a modern, responsive, and high-performance single-page portfolio designed to highlight technical expertise in Data Science and Analytics. It features a sleek dark-themed UI with interactive elements to provide an engaging user experience.
