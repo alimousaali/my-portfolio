@@ -4,20 +4,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <meta name="description"
     content="Ali Mousa – Data Analyst & Junior Data Scientist. Turning raw data into decisions that drive real business impact." />
+
   <title>Ali Mousa | Data Analyst & Junior Data Scientist</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
 
-  <link rel="stylesheet"
+  <link
+    rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <style>
+
     /* =============================================
        DESIGN TOKENS
     ============================================= */
@@ -47,6 +52,7 @@
       --font-main: 'Inter', sans-serif;
       --font-display: 'Space Grotesk', sans-serif;
     }
+
 
     /* =============================================
        RESET & BASE
@@ -92,6 +98,7 @@
       padding: 96px 0;
     }
 
+
     /* =============================================
        SCROLLBAR
     ============================================= */
@@ -108,6 +115,7 @@
       background: var(--clr-primary);
       border-radius: 99px;
     }
+
 
     /* =============================================
        ANIMATED GRADIENT BACKGROUND
@@ -165,6 +173,7 @@
         transform: translate(40px, 30px) scale(1.15);
       }
     }
+
 
     /* =============================================
        LAYOUT HELPERS
@@ -237,6 +246,7 @@
       background: rgba(167, 139, 250, .1);
     }
 
+
     /* =============================================
        NAVIGATION
     ============================================= */
@@ -248,7 +258,8 @@
       right: 0;
       z-index: 1000;
       padding: 0 24px;
-      transition: background var(--transition),
+      transition:
+        background var(--transition),
         backdrop-filter var(--transition),
         box-shadow var(--transition);
     }
@@ -292,7 +303,8 @@
       color: var(--clr-muted);
       padding: 7px 14px;
       border-radius: 99px;
-      transition: color var(--transition),
+      transition:
+        color var(--transition),
         background var(--transition);
     }
 
@@ -315,7 +327,8 @@
       background: var(--clr-primary) !important;
       border-radius: 99px !important;
       padding: 8px 20px !important;
-      transition: background var(--transition),
+      transition:
+        background var(--transition),
         transform var(--transition),
         box-shadow var(--transition) !important;
     }
@@ -364,6 +377,7 @@
       color: var(--clr-white);
       background: rgba(255, 255, 255, .05);
     }
+
 
     /* =============================================
        HERO
@@ -414,12 +428,12 @@
       0%,
       100% {
         opacity: 1;
-        transform: scale(1)
+        transform: scale(1);
       }
 
       50% {
         opacity: .5;
-        transform: scale(1.3)
+        transform: scale(1.3);
       }
     }
 
@@ -439,6 +453,7 @@
         var(--clr-accent) 60%,
         var(--clr-accent2) 100%
       );
+
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -475,7 +490,8 @@
       border-radius: var(--radius-sm);
       border: none;
       cursor: pointer;
-      transition: background var(--transition),
+      transition:
+        background var(--transition),
         transform var(--transition),
         box-shadow var(--transition);
     }
@@ -498,7 +514,8 @@
       border-radius: var(--radius-sm);
       border: 1px solid var(--clr-border);
       cursor: pointer;
-      transition: border-color var(--transition),
+      transition:
+        border-color var(--transition),
         color var(--transition),
         background var(--transition),
         transform var(--transition);
@@ -511,36 +528,6 @@
       background: rgba(59, 130, 246, .06);
     }
 
-    .hero-stats {
-      display: flex;
-      gap: 36px;
-      flex-wrap: wrap;
-    }
-
-    .hero-stat {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .hero-stat-num {
-      font-family: var(--font-display);
-      font-size: 1.8rem;
-      font-weight: 800;
-      color: var(--clr-white);
-      line-height: 1;
-    }
-
-    .hero-stat-num span {
-      color: var(--clr-primary);
-    }
-
-    .hero-stat-label {
-      font-size: .78rem;
-      color: var(--clr-muted);
-      margin-top: 4px;
-      text-transform: uppercase;
-      letter-spacing: .06em;
-    }
 
     /* =============================================
        HERO IMAGE
@@ -564,6 +551,7 @@
         var(--clr-accent2),
         var(--clr-primary)
       );
+
       animation: spin 8s linear infinite;
       opacity: .55;
     }
@@ -612,11 +600,11 @@
 
       0%,
       100% {
-        transform: translateY(0)
+        transform: translateY(0);
       }
 
       50% {
-        transform: translateY(-8px)
+        transform: translateY(-8px);
       }
     }
 
@@ -646,6 +634,7 @@
       right: -20px;
       animation-delay: -2s;
     }
+
 
     /* =============================================
        ABOUT
@@ -697,7 +686,8 @@
       border: 1px solid var(--clr-border);
       border-radius: var(--radius-md);
       padding: 16px 20px;
-      transition: border-color var(--transition),
+      transition:
+        border-color var(--transition),
         transform var(--transition);
     }
 
@@ -732,8 +722,10 @@
       font-size: .92rem;
     }
 
+
     /* =============================================
        SKILLS
+       NO PROGRESS BARS / NO PERCENTAGES
     ============================================= */
 
     .skills-grid {
@@ -747,7 +739,8 @@
       border: 1px solid var(--clr-border);
       border-radius: var(--radius-md);
       padding: 28px;
-      transition: border-color var(--transition),
+      transition:
+        border-color var(--transition),
         box-shadow var(--transition);
     }
 
@@ -793,6 +786,7 @@
       font-size: 1.1rem;
     }
 
+
     /* =============================================
        KEY ACHIEVEMENTS
     ============================================= */
@@ -817,7 +811,8 @@
       gap: 14px;
       position: relative;
       overflow: hidden;
-      transition: border-color var(--transition),
+      transition:
+        border-color var(--transition),
         transform var(--transition),
         box-shadow var(--transition);
     }
@@ -877,6 +872,7 @@
       line-height: 1.55;
     }
 
+
     /* =============================================
        CERTIFICATES SLIDER
     ============================================= */
@@ -909,7 +905,8 @@
       display: flex;
       flex-direction: column;
       overflow: hidden;
-      transition: border-color var(--transition),
+      transition:
+        border-color var(--transition),
         transform var(--transition),
         box-shadow var(--transition);
       cursor: pointer;
@@ -1072,6 +1069,7 @@
     }
 
     @media (max-width: 1300px) {
+
       .slider-btn.prev {
         left: 0;
       }
@@ -1079,9 +1077,11 @@
       .slider-btn.next {
         right: 0;
       }
+
     }
 
     @media (max-width: 600px) {
+
       .cert-card {
         flex: 0 0 290px;
       }
@@ -1091,7 +1091,9 @@
         height: 40px;
         font-size: .9rem;
       }
+
     }
+
 
     /* =============================================
        PROJECTS
@@ -1111,7 +1113,8 @@
       display: grid;
       grid-template-columns: 1.1fr 1fr;
       gap: 0;
-      transition: border-color var(--transition),
+      transition:
+        border-color var(--transition),
         transform var(--transition),
         box-shadow var(--transition);
     }
@@ -1244,7 +1247,8 @@
       background: rgba(255, 255, 255, .05);
       border: 1px solid var(--clr-border);
       color: var(--clr-muted);
-      transition: color var(--transition),
+      transition:
+        color var(--transition),
         border-color var(--transition);
     }
 
@@ -1291,8 +1295,10 @@
       background: var(--clr-primary-d);
     }
 
+
     /* =============================================
        CURRENTLY LEARNING
+       NO PROGRESS BARS / NO PERCENTAGES
     ============================================= */
 
     #learning {
@@ -1315,7 +1321,8 @@
       gap: 12px;
       position: relative;
       overflow: hidden;
-      transition: border-color var(--transition),
+      transition:
+        border-color var(--transition),
         transform var(--transition),
         box-shadow var(--transition);
     }
@@ -1348,6 +1355,7 @@
       color: var(--clr-muted);
       line-height: 1.5;
     }
+
 
     /* =============================================
        CONTACT
@@ -1391,7 +1399,8 @@
       border: 1px solid var(--clr-border);
       border-radius: var(--radius-md);
       padding: 16px 20px;
-      transition: border-color var(--transition),
+      transition:
+        border-color var(--transition),
         transform var(--transition),
         box-shadow var(--transition);
     }
@@ -1459,7 +1468,8 @@
       padding: 12px 16px;
       outline: none;
       resize: vertical;
-      transition: border-color var(--transition),
+      transition:
+        border-color var(--transition),
         box-shadow var(--transition);
     }
 
@@ -1488,7 +1498,8 @@
       align-items: center;
       justify-content: center;
       gap: 8px;
-      transition: background var(--transition),
+      transition:
+        background var(--transition),
         transform var(--transition),
         box-shadow var(--transition);
     }
@@ -1510,6 +1521,7 @@
       font-weight: 600;
       margin-top: 16px;
     }
+
 
     /* =============================================
        FOOTER
@@ -1556,7 +1568,8 @@
       justify-content: center;
       color: var(--clr-muted);
       font-size: .9rem;
-      transition: border-color var(--transition),
+      transition:
+        border-color var(--transition),
         color var(--transition),
         background var(--transition);
     }
@@ -1567,6 +1580,7 @@
       background: rgba(59, 130, 246, .1);
     }
 
+
     /* =============================================
        SCROLL REVEAL
     ============================================= */
@@ -1574,7 +1588,8 @@
     .reveal {
       opacity: 0;
       transform: translateY(30px);
-      transition: opacity .7s cubic-bezier(.4, 0, .2, 1),
+      transition:
+        opacity .7s cubic-bezier(.4, 0, .2, 1),
         transform .7s cubic-bezier(.4, 0, .2, 1);
     }
 
@@ -1582,6 +1597,7 @@
       opacity: 1;
       transform: none;
     }
+
 
     /* =============================================
        RESPONSIVE
@@ -1599,10 +1615,6 @@
       }
 
       .hero-btns {
-        justify-content: center;
-      }
-
-      .hero-stats {
         justify-content: center;
       }
 
@@ -1649,7 +1661,9 @@
       #contact .contact-wrapper {
         grid-template-columns: 1fr;
       }
+
     }
+
 
     @media (max-width: 600px) {
 
@@ -1684,7 +1698,9 @@
       .footer-inner {
         flex-direction: column;
       }
+
     }
+
 
     @media (max-width: 420px) {
 
@@ -1695,19 +1711,26 @@
       .learning-grid {
         grid-template-columns: 1fr;
       }
+
     }
+
   </style>
 </head>
 
+
 <body>
 
-  <!-- BACKGROUND ORBS -->
+
+  <!-- =============================================
+       BACKGROUND ORBS
+  ============================================= -->
 
   <div class="bg-orbs">
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
     <div class="orb orb-3"></div>
   </div>
+
 
   <!-- =============================================
        NAVIGATION
@@ -1723,15 +1746,36 @@
 
       <div class="nav-links">
 
-        <a href="#about" id="nav-about">About</a>
-        <a href="#skills" id="nav-skills">Skills</a>
-        <a href="#achievements" id="nav-ach">Achievements</a>
-        <a href="#certificates" id="nav-certs">Certificates</a>
-        <a href="#projects" id="nav-projects">Projects</a>
-        <a href="#learning" id="nav-learning">Learning</a>
-        <a href="#contact" id="nav-contact">Contact</a>
+        <a href="#about" id="nav-about">
+          About
+        </a>
 
-        <a href="Ali_Mousa_Ali_Resume.pdf"
+        <a href="#skills" id="nav-skills">
+          Skills
+        </a>
+
+        <a href="#achievements" id="nav-ach">
+          Achievements
+        </a>
+
+        <a href="#certificates" id="nav-certs">
+          Certificates
+        </a>
+
+        <a href="#projects" id="nav-projects">
+          Projects
+        </a>
+
+        <a href="#learning" id="nav-learning">
+          Learning
+        </a>
+
+        <a href="#contact" id="nav-contact">
+          Contact
+        </a>
+
+        <a
+          href="Ali_Mousa_Ali_Resume.pdf"
           download
           class="nav-cv-btn"
           id="nav-cv">
@@ -1743,7 +1787,9 @@
 
       </div>
 
-      <div class="hamburger"
+
+      <div
+        class="hamburger"
         id="hamburger"
         aria-label="Toggle menu">
 
@@ -1755,24 +1801,52 @@
 
     </div>
 
-    <div class="nav-mobile" id="navMobile">
 
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#certificates">Certificates</a>
-      <a href="#projects">Projects</a>
-      <a href="#learning">Currently Learning</a>
-      <a href="#contact">Contact</a>
+    <div
+      class="nav-mobile"
+      id="navMobile">
 
-      <a href="Ali_Mousa_Ali_Resume.pdf" download>
+      <a href="#about">
+        About
+      </a>
+
+      <a href="#skills">
+        Skills
+      </a>
+
+      <a href="#achievements">
+        Achievements
+      </a>
+
+      <a href="#certificates">
+        Certificates
+      </a>
+
+      <a href="#projects">
+        Projects
+      </a>
+
+      <a href="#learning">
+        Currently Learning
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+
+      <a
+        href="Ali_Mousa_Ali_Resume.pdf"
+        download>
+
         <i class="fas fa-download"></i>
         Download CV
+
       </a>
 
     </div>
 
   </nav>
+
 
   <!-- =============================================
        HERO
@@ -1784,6 +1858,7 @@
 
       <div class="hero-grid">
 
+
         <div>
 
           <div class="hero-tag">
@@ -1793,6 +1868,7 @@
             Available for Opportunities
 
           </div>
+
 
           <h1 class="hero-title">
 
@@ -1808,6 +1884,7 @@
 
           </h1>
 
+
           <p class="hero-value">
 
             I turn <strong>raw data into decisions</strong> —
@@ -1817,9 +1894,11 @@
 
           </p>
 
+
           <div class="hero-btns">
 
-            <a href="#projects"
+            <a
+              href="#projects"
               class="btn-primary">
 
               <i class="fas fa-rocket"></i>
@@ -1827,7 +1906,9 @@
 
             </a>
 
-            <a href="Ali_Mousa_Ali_Resume.pdf"
+
+            <a
+              href="Ali_Mousa_Ali_Resume.pdf"
               download
               class="btn-outline"
               id="hero-cv-btn">
@@ -1839,54 +1920,17 @@
 
           </div>
 
-          <div class="hero-stats">
-
-            <div class="hero-stat">
-
-              <div class="hero-stat-num">
-                3<span>+</span>
-              </div>
-
-              <div class="hero-stat-label">
-                Projects Delivered
-              </div>
-
-            </div>
-
-            <div class="hero-stat">
-
-              <div class="hero-stat-num">
-                88<span>%</span>
-              </div>
-
-              <div class="hero-stat-label">
-                Best Model Accuracy
-              </div>
-
-            </div>
-
-            <div class="hero-stat">
-
-              <div class="hero-stat-num">
-                2<span>+</span>
-              </div>
-
-              <div class="hero-stat-label">
-                BI Dashboards
-              </div>
-
-            </div>
-
-          </div>
-
         </div>
+
 
         <!-- IMAGE -->
 
         <div class="hero-image-wrap">
 
           <div class="hero-image-ring"></div>
+
           <div class="hero-image-ring2"></div>
+
 
           <img
             src="profile.jpeg"
@@ -1894,9 +1938,12 @@
             class="hero-img"
             id="hero-profile-img" />
 
+
           <div class="hero-badge-float hb1">
 
-            <span class="icon">🤖</span>
+            <span class="icon">
+              🤖
+            </span>
 
             <div>
 
@@ -1908,9 +1955,12 @@
 
           </div>
 
+
           <div class="hero-badge-float hb2">
 
-            <span class="icon">📊</span>
+            <span class="icon">
+              📊
+            </span>
 
             <div>
 
@@ -1930,6 +1980,7 @@
 
   </section>
 
+
   <!-- =============================================
        ABOUT
   ============================================= -->
@@ -1940,6 +1991,7 @@
 
       <div class="about-grid reveal">
 
+
         <div class="about-text">
 
           <div class="section-tag">
@@ -1949,9 +2001,11 @@
 
           </div>
 
+
           <h2 class="section-title">
             Turning Data Into Competitive Advantage
           </h2>
+
 
           <p>
 
@@ -1961,6 +2015,7 @@
             intelligent, real-world systems.
 
           </p>
+
 
           <p>
 
@@ -1972,6 +2027,7 @@
 
           </p>
 
+
           <div class="about-highlight-box">
 
             "I don't just analyze data — I solve business problems.
@@ -1979,6 +2035,7 @@
             drive a decision."
 
           </div>
+
 
           <p>
 
@@ -1992,7 +2049,9 @@
 
         </div>
 
+
         <div class="about-info">
+
 
           <div class="about-info-item">
 
@@ -2014,6 +2073,7 @@
 
           </div>
 
+
           <div class="about-info-item">
 
             <div class="aii-icon">
@@ -2033,6 +2093,7 @@
             </div>
 
           </div>
+
 
           <div class="about-info-item">
 
@@ -2054,6 +2115,7 @@
 
           </div>
 
+
           <div class="about-info-item">
 
             <div class="aii-icon">
@@ -2074,6 +2136,7 @@
 
           </div>
 
+
           <div class="about-info-item">
 
             <div class="aii-icon">
@@ -2093,6 +2156,7 @@
             </div>
 
           </div>
+
 
           <div class="about-info-item">
 
@@ -2122,6 +2186,7 @@
 
   </section>
 
+
   <!-- =============================================
        SKILLS
   ============================================= -->
@@ -2129,6 +2194,7 @@
   <section id="skills">
 
     <div class="container">
+
 
       <div class="reveal">
 
@@ -2139,9 +2205,11 @@
 
         </div>
 
+
         <h2 class="section-title">
           My Toolbox
         </h2>
+
 
         <p class="section-sub">
 
@@ -2152,7 +2220,9 @@
 
       </div>
 
+
       <div class="skills-grid reveal">
+
 
         <!-- DATA ANALYSIS -->
 
@@ -2160,37 +2230,52 @@
 
           <div class="skill-group-title">
 
-            <span class="sg-icon">📊</span>
+            <span class="sg-icon">
+              📊
+            </span>
 
             Data Analysis &amp; Visualization
 
           </div>
 
+
           <div class="skill-item">
+
             <div class="skill-name">
               Python (Pandas, NumPy)
             </div>
+
           </div>
 
+
           <div class="skill-item">
+
             <div class="skill-name">
               Power BI
             </div>
+
           </div>
 
+
           <div class="skill-item">
+
             <div class="skill-name">
               Matplotlib / Seaborn
             </div>
+
           </div>
 
+
           <div class="skill-item">
+
             <div class="skill-name">
               Excel / Google Sheets
             </div>
+
           </div>
 
         </div>
+
 
         <!-- MACHINE LEARNING -->
 
@@ -2198,37 +2283,52 @@
 
           <div class="skill-group-title">
 
-            <span class="sg-icon">🤖</span>
+            <span class="sg-icon">
+              🤖
+            </span>
 
             Machine Learning &amp; AI
 
           </div>
 
+
           <div class="skill-item">
+
             <div class="skill-name">
               Scikit-learn
             </div>
+
           </div>
 
+
           <div class="skill-item">
+
             <div class="skill-name">
               OpenCV / face_recognition
             </div>
+
           </div>
 
+
           <div class="skill-item">
+
             <div class="skill-name">
               Feature Engineering
             </div>
+
           </div>
 
+
           <div class="skill-item">
+
             <div class="skill-name">
               Model Evaluation &amp; Tuning
             </div>
+
           </div>
 
         </div>
+
 
         <!-- DATA ENGINEERING -->
 
@@ -2236,34 +2336,48 @@
 
           <div class="skill-group-title">
 
-            <span class="sg-icon">🗄️</span>
+            <span class="sg-icon">
+              🗄️
+            </span>
 
             Data &amp; Engineering
 
           </div>
 
+
           <div class="skill-item">
+
             <div class="skill-name">
               SQL Server
             </div>
+
           </div>
 
+
           <div class="skill-item">
+
             <div class="skill-name">
               Data Cleaning &amp; EDA
             </div>
+
           </div>
 
+
           <div class="skill-item">
+
             <div class="skill-name">
               Git / GitHub
             </div>
+
           </div>
 
+
           <div class="skill-item">
+
             <div class="skill-name">
               Python (OOP / Scripts)
             </div>
+
           </div>
 
         </div>
@@ -2274,6 +2388,7 @@
 
   </section>
 
+
   <!-- =============================================
        KEY ACHIEVEMENTS
   ============================================= -->
@@ -2281,6 +2396,7 @@
   <section id="achievements">
 
     <div class="container">
+
 
       <div class="reveal">
 
@@ -2291,9 +2407,11 @@
 
         </div>
 
+
         <h2 class="section-title">
           Results That Speak
         </h2>
+
 
         <p class="section-sub">
           Concrete outcomes from real projects — not just theories.
@@ -2301,11 +2419,15 @@
 
       </div>
 
+
       <div class="achievements-grid reveal">
+
 
         <div class="achievement-card">
 
-          <div class="ach-icon">🎯</div>
+          <div class="ach-icon">
+            🎯
+          </div>
 
           <div class="ach-metric">
             <span></span>
@@ -2325,9 +2447,12 @@
 
         </div>
 
+
         <div class="achievement-card">
 
-          <div class="ach-icon">👁️</div>
+          <div class="ach-icon">
+            👁️
+          </div>
 
           <div class="ach-metric">
             Real<span>-Time</span>
@@ -2347,9 +2472,12 @@
 
         </div>
 
+
         <div class="achievement-card">
 
-          <div class="ach-icon">📈</div>
+          <div class="ach-icon">
+            📈
+          </div>
 
           <div class="ach-metric">
             45<span>K+</span>
@@ -2369,9 +2497,12 @@
 
         </div>
 
+
         <div class="achievement-card">
 
-          <div class="ach-icon">💼</div>
+          <div class="ach-icon">
+            💼
+          </div>
 
           <div class="ach-metric">
             5<span>-Page</span>
@@ -2391,9 +2522,12 @@
 
         </div>
 
+
         <div class="achievement-card">
 
-          <div class="ach-icon">🏦</div>
+          <div class="ach-icon">
+            🏦
+          </div>
 
           <div class="ach-metric">
             11<span>.7%</span>
@@ -2413,9 +2547,12 @@
 
         </div>
 
+
         <div class="achievement-card">
 
-          <div class="ach-icon">💰</div>
+          <div class="ach-icon">
+            💰
+          </div>
 
           <div class="ach-metric">
             22<span>M+</span>
@@ -2441,6 +2578,7 @@
 
   </section>
 
+
   <!-- =============================================
        CERTIFICATES
   ============================================= -->
@@ -2448,6 +2586,7 @@
   <section id="certificates">
 
     <div class="container">
+
 
       <div class="reveal">
 
@@ -2458,9 +2597,11 @@
 
         </div>
 
+
         <h2 class="section-title">
           Verified Expertise &amp; Achievements
         </h2>
+
 
         <p class="section-sub">
 
@@ -2471,7 +2612,9 @@
 
       </div>
 
+
       <div class="slider-wrapper reveal">
+
 
         <button
           class="slider-btn prev"
@@ -2482,12 +2625,16 @@
 
         </button>
 
+
         <div class="slider-track-container">
 
-          <div class="slider-track" id="sliderTrack">
+          <div
+            class="slider-track"
+            id="sliderTrack">
+
 
             <!-- =============================================
-                 NEW CERTIFICATE
+                 ORANGE CERTIFICATE
             ============================================= -->
 
             <a
@@ -2499,9 +2646,10 @@
 
                 <img
                   src="Ali Mousa Ali orang.png"
-                  alt="Ali Mousa Orange Certificate">
+                  alt="Ali Mousa Orange Certificate" />
 
               </div>
+
 
               <div class="cert-body">
 
@@ -2517,6 +2665,7 @@
 
                 </div>
 
+
                 <div class="cert-view">
 
                   View Full Certificate
@@ -2529,6 +2678,7 @@
 
             </a>
 
+
             <!-- CARD 1 -->
 
             <a
@@ -2540,9 +2690,10 @@
 
                 <img
                   src="Ali Mousa Ali HCIA-AI (NTI).png"
-                  alt="HCIA-AI Professional Certification">
+                  alt="HCIA-AI Professional Certification" />
 
               </div>
+
 
               <div class="cert-body">
 
@@ -2558,14 +2709,19 @@
 
                 </div>
 
+
                 <div class="cert-view">
+
                   View Full Certificate
+
                   <i class="fas fa-external-link-alt"></i>
+
                 </div>
 
               </div>
 
             </a>
+
 
             <!-- CARD 2 -->
 
@@ -2578,9 +2734,10 @@
 
                 <img
                   src="AI NTI.png"
-                  alt="AI Training Certification">
+                  alt="AI Training Certification" />
 
               </div>
+
 
               <div class="cert-body">
 
@@ -2596,14 +2753,19 @@
 
                 </div>
 
+
                 <div class="cert-view">
+
                   View Full Certificate
+
                   <i class="fas fa-external-link-alt"></i>
+
                 </div>
 
               </div>
 
             </a>
+
 
             <!-- CARD 3 -->
 
@@ -2616,9 +2778,10 @@
 
                 <img
                   src="Ai Ethics (Datacamp).png"
-                  alt="AI Ethics Certificate">
+                  alt="AI Ethics Certificate" />
 
               </div>
+
 
               <div class="cert-body">
 
@@ -2634,14 +2797,19 @@
 
                 </div>
 
+
                 <div class="cert-view">
+
                   View Full Certificate
+
                   <i class="fas fa-external-link-alt"></i>
+
                 </div>
 
               </div>
 
             </a>
+
 
             <!-- CARD 4 -->
 
@@ -2654,9 +2822,10 @@
 
                 <img
                   src="Intro to AI Agent (datacamp).png"
-                  alt="Introduction to AI Agents">
+                  alt="Introduction to AI Agents" />
 
               </div>
+
 
               <div class="cert-body">
 
@@ -2672,14 +2841,19 @@
 
                 </div>
 
+
                 <div class="cert-view">
+
                   View Full Certificate
+
                   <i class="fas fa-external-link-alt"></i>
+
                 </div>
 
               </div>
 
             </a>
+
 
             <!-- CARD 5 -->
 
@@ -2692,9 +2866,10 @@
 
                 <img
                   src="understanding Data science (Datacamp).png"
-                  alt="Understanding Data Science">
+                  alt="Understanding Data Science" />
 
               </div>
+
 
               <div class="cert-body">
 
@@ -2710,14 +2885,19 @@
 
                 </div>
 
+
                 <div class="cert-view">
+
                   View Full Certificate
+
                   <i class="fas fa-external-link-alt"></i>
+
                 </div>
 
               </div>
 
             </a>
+
 
             <!-- CARD 6 -->
 
@@ -2730,9 +2910,10 @@
 
                 <img
                   src="intro to SQL (datacamp).png"
-                  alt="Intro to SQL">
+                  alt="Intro to SQL" />
 
               </div>
+
 
               <div class="cert-body">
 
@@ -2748,14 +2929,19 @@
 
                 </div>
 
+
                 <div class="cert-view">
+
                   View Full Certificate
+
                   <i class="fas fa-external-link-alt"></i>
+
                 </div>
 
               </div>
 
             </a>
+
 
             <!-- CARD 7 -->
 
@@ -2768,9 +2954,10 @@
 
                 <img
                   src="SQL certificate.jpg"
-                  alt="SQL Associate Certification">
+                  alt="SQL Associate Certification" />
 
               </div>
+
 
               <div class="cert-body">
 
@@ -2786,14 +2973,19 @@
 
                 </div>
 
+
                 <div class="cert-view">
+
                   View Full Certificate
+
                   <i class="fas fa-external-link-alt"></i>
+
                 </div>
 
               </div>
 
             </a>
+
 
             <!-- CARD 8 -->
 
@@ -2806,9 +2998,10 @@
 
                 <img
                   src="CIB Summer internship.png"
-                  alt="Summer Internship Program">
+                  alt="Summer Internship Program" />
 
               </div>
+
 
               <div class="cert-body">
 
@@ -2824,14 +3017,19 @@
 
                 </div>
 
+
                 <div class="cert-view">
+
                   View Full Certificate
+
                   <i class="fas fa-external-link-alt"></i>
+
                 </div>
 
               </div>
 
             </a>
+
 
             <!-- CARD 9 -->
 
@@ -2844,9 +3042,10 @@
 
                 <img
                   src="intro to AI and ML (shabab mobtakeron).png"
-                  alt="Intro to AI & ML">
+                  alt="Intro to AI & ML" />
 
               </div>
+
 
               <div class="cert-body">
 
@@ -2862,14 +3061,19 @@
 
                 </div>
 
+
                 <div class="cert-view">
+
                   View Full Certificate
+
                   <i class="fas fa-external-link-alt"></i>
+
                 </div>
 
               </div>
 
             </a>
+
 
             <!-- CARD 10 -->
 
@@ -2882,9 +3086,10 @@
 
                 <img
                   src="Graduation project intro to ai ,ml (Shabab mobtakeron ).png"
-                  alt="Graduation Project: AI & ML">
+                  alt="Graduation Project: AI & ML" />
 
               </div>
+
 
               <div class="cert-body">
 
@@ -2900,14 +3105,19 @@
 
                 </div>
 
+
                 <div class="cert-view">
+
                   View Full Certificate
+
                   <i class="fas fa-external-link-alt"></i>
+
                 </div>
 
               </div>
 
             </a>
+
 
             <!-- CARD 11 -->
 
@@ -2920,9 +3130,10 @@
 
                 <img
                   src="Intro to Ai ,ML and Quantum ML Fundamentals (minister of youth and sports).jpg"
-                  alt="AI, ML & Quantum ML Fundamentals">
+                  alt="AI, ML & Quantum ML Fundamentals" />
 
               </div>
+
 
               <div class="cert-body">
 
@@ -2938,14 +3149,19 @@
 
                 </div>
 
+
                 <div class="cert-view">
+
                   View Full Certificate
+
                   <i class="fas fa-external-link-alt"></i>
+
                 </div>
 
               </div>
 
             </a>
+
 
             <!-- CARD 12 -->
 
@@ -2958,9 +3174,10 @@
 
                 <img
                   src="Python programming basics (mahara tech ITI).png"
-                  alt="Python Programming Basics">
+                  alt="Python Programming Basics" />
 
               </div>
+
 
               <div class="cert-body">
 
@@ -2976,14 +3193,19 @@
 
                 </div>
 
+
                 <div class="cert-view">
+
                   View Full Certificate
+
                   <i class="fas fa-external-link-alt"></i>
+
                 </div>
 
               </div>
 
             </a>
+
 
             <!-- CARD 13 -->
 
@@ -2996,9 +3218,10 @@
 
                 <img
                   src="ML for Data scientists (Mahara tech ITI).png"
-                  alt="ML for Data Scientists">
+                  alt="ML for Data Scientists" />
 
               </div>
+
 
               <div class="cert-body">
 
@@ -3014,14 +3237,19 @@
 
                 </div>
 
+
                 <div class="cert-view">
+
                   View Full Certificate
+
                   <i class="fas fa-external-link-alt"></i>
+
                 </div>
 
               </div>
 
             </a>
+
 
             <!-- CARD 14 -->
 
@@ -3034,9 +3262,10 @@
 
                 <img
                   src="modern gas training.jfif"
-                  alt="Field Training Certification">
+                  alt="Field Training Certification" />
 
               </div>
+
 
               <div class="cert-body">
 
@@ -3052,14 +3281,19 @@
 
                 </div>
 
+
                 <div class="cert-view">
+
                   View Full Certificate
+
                   <i class="fas fa-external-link-alt"></i>
+
                 </div>
 
               </div>
 
             </a>
+
 
             <!-- CARD 15 -->
 
@@ -3072,9 +3306,10 @@
 
                 <img
                   src="responsible-innovation-and-trustworthy-ai.png"
-                  alt="Responsible Innovation & AI">
+                  alt="Responsible Innovation & AI" />
 
               </div>
+
 
               <div class="cert-body">
 
@@ -3090,18 +3325,24 @@
 
                 </div>
 
+
                 <div class="cert-view">
+
                   View Full Certificate
+
                   <i class="fas fa-external-link-alt"></i>
+
                 </div>
 
               </div>
 
             </a>
 
+
           </div>
 
         </div>
+
 
         <button
           class="slider-btn next"
@@ -3111,6 +3352,7 @@
           <i class="fas fa-chevron-right"></i>
 
         </button>
+
 
         <div
           class="slider-dots"
@@ -3123,6 +3365,7 @@
 
   </section>
 
+
   <!-- =============================================
        PROJECTS
   ============================================= -->
@@ -3130,6 +3373,7 @@
   <section id="projects">
 
     <div class="container">
+
 
       <div class="reveal">
 
@@ -3140,18 +3384,24 @@
 
         </div>
 
+
         <h2 class="section-title">
           Featured Work
         </h2>
 
+
         <p class="section-sub">
+
           End-to-end projects with real data, real models,
           and real results.
+
         </p>
 
       </div>
 
+
       <div class="projects-grid">
+
 
         <!-- PROJECT 1 -->
 
@@ -3163,6 +3413,7 @@
               01
             </span>
 
+
             <img
               src="Hospital Patient Identification & Logging System.png"
               alt="Face Recognition System - Hospital Patient Identification"
@@ -3170,15 +3421,18 @@
 
           </div>
 
+
           <div class="project-body">
 
             <div class="project-cat">
               Computer Vision · Real-Time System
             </div>
 
+
             <div class="project-title">
               Hospital Patient Face Recognition System
             </div>
+
 
             <p class="project-desc">
 
@@ -3189,6 +3443,7 @@
               and logs visits automatically.
 
             </p>
+
 
             <div class="project-results">
 
@@ -3218,6 +3473,7 @@
 
             </div>
 
+
             <div class="project-stack">
 
               <span class="stk">Python</span>
@@ -3228,6 +3484,7 @@
               <span class="stk">CSV Logging</span>
 
             </div>
+
 
             <div class="project-links">
 
@@ -3249,6 +3506,7 @@
 
         </div>
 
+
         <!-- PROJECT 2 -->
 
         <div class="project-card reverse reveal">
@@ -3259,6 +3517,7 @@
               02
             </span>
 
+
             <img
               src="summary Bank Marketing Dashboard.png"
               alt="Bank Marketing Power BI Dashboard"
@@ -3266,15 +3525,18 @@
 
           </div>
 
+
           <div class="project-body">
 
             <div class="project-cat">
               Machine Learning · Business Intelligence
             </div>
 
+
             <div class="project-title">
               Bank Marketing Campaign Analysis &amp; ML Prediction
             </div>
+
 
             <p class="project-desc">
 
@@ -3285,6 +3547,7 @@
               Power BI dashboard with ML Predictions page.
 
             </p>
+
 
             <div class="project-results">
 
@@ -3314,6 +3577,7 @@
 
             </div>
 
+
             <div class="project-stack">
 
               <span class="stk">Python</span>
@@ -3325,6 +3589,7 @@
               <span class="stk">Matplotlib</span>
 
             </div>
+
 
             <div class="project-links">
 
@@ -3346,6 +3611,7 @@
 
         </div>
 
+
         <!-- PROJECT 3 -->
 
         <div class="project-card reveal">
@@ -3356,6 +3622,7 @@
               03
             </span>
 
+
             <img
               src="main Smart Sales Analytics & Business Insights.png"
               alt="Smart Sales Analytics Power BI Dashboard"
@@ -3363,15 +3630,18 @@
 
           </div>
 
+
           <div class="project-body">
 
             <div class="project-cat">
               Business Intelligence · Analytics Dashboard
             </div>
 
+
             <div class="project-title">
               Smart Sales Analytics &amp; Business Insights Dashboard
             </div>
+
 
             <p class="project-desc">
 
@@ -3382,6 +3652,7 @@
               views for executive decision-making.
 
             </p>
+
 
             <div class="project-results">
 
@@ -3411,6 +3682,7 @@
 
             </div>
 
+
             <div class="project-stack">
 
               <span class="stk">Power BI</span>
@@ -3421,6 +3693,7 @@
               <span class="stk">Time Intelligence</span>
 
             </div>
+
 
             <div class="project-links">
 
@@ -3448,6 +3721,7 @@
 
   </section>
 
+
   <!-- =============================================
        CURRENTLY LEARNING
   ============================================= -->
@@ -3455,6 +3729,7 @@
   <section id="learning">
 
     <div class="container">
+
 
       <div class="reveal">
 
@@ -3465,9 +3740,11 @@
 
         </div>
 
+
         <h2 class="section-title">
           Always Growing
         </h2>
+
 
         <p class="section-sub">
 
@@ -3478,7 +3755,11 @@
 
       </div>
 
+
       <div class="learning-grid reveal">
+
+
+        <!-- ADVANCED SQL -->
 
         <div class="learning-card">
 
@@ -3500,6 +3781,9 @@
 
         </div>
 
+
+        <!-- POWER BI -->
+
         <div class="learning-card">
 
           <div class="lc-icon">
@@ -3518,6 +3802,9 @@
           </div>
 
         </div>
+
+
+        <!-- ML DEPLOYMENT -->
 
         <div class="learning-card">
 
@@ -3538,6 +3825,9 @@
           </div>
 
         </div>
+
+
+        <!-- DEEP LEARNING -->
 
         <div class="learning-card">
 
@@ -3565,6 +3855,7 @@
 
   </section>
 
+
   <!-- =============================================
        CONTACT
   ============================================= -->
@@ -3572,6 +3863,7 @@
   <section id="contact">
 
     <div class="container">
+
 
       <div class="reveal">
 
@@ -3582,13 +3874,16 @@
 
         </div>
 
+
         <h2 class="section-title">
           Let's Build Something Together
         </h2>
 
       </div>
 
+
       <div class="contact-wrapper reveal">
+
 
         <div class="contact-info">
 
@@ -3601,7 +3896,9 @@
 
           </p>
 
+
           <div class="contact-links">
+
 
             <a
               href="mailto:ali.mousa152004@gmail.com"
@@ -3625,6 +3922,7 @@
               </div>
 
             </a>
+
 
             <a
               href="https://linkedin.com/in/ali-mousa"
@@ -3651,6 +3949,7 @@
 
             </a>
 
+
             <a
               href="https://github.com/alimousaali"
               target="_blank"
@@ -3675,6 +3974,7 @@
               </div>
 
             </a>
+
 
             <a
               href="Ali_Mousa_Ali_Resume.pdf"
@@ -3704,11 +4004,15 @@
 
         </div>
 
+
         <!-- CONTACT FORM -->
 
         <div class="contact-form-card">
 
-          <form id="contactForm" novalidate>
+          <form
+            id="contactForm"
+            novalidate>
+
 
             <div class="form-group">
 
@@ -3724,6 +4028,7 @@
 
             </div>
 
+
             <div class="form-group">
 
               <label for="cf-email">
@@ -3738,6 +4043,7 @@
 
             </div>
 
+
             <div class="form-group">
 
               <label for="cf-subject">
@@ -3750,6 +4056,7 @@
                 placeholder="Job opportunity / Collaboration / Freelance" />
 
             </div>
+
 
             <div class="form-group">
 
@@ -3764,6 +4071,7 @@
 
             </div>
 
+
             <button
               type="submit"
               class="form-submit"
@@ -3775,6 +4083,7 @@
             </button>
 
           </form>
+
 
           <div
             class="form-success"
@@ -3793,6 +4102,7 @@
 
   </section>
 
+
   <!-- =============================================
        FOOTER
   ============================================= -->
@@ -3800,6 +4110,7 @@
   <footer>
 
     <div class="footer-inner">
+
 
       <div class="footer-copy">
 
@@ -3810,7 +4121,9 @@
 
       </div>
 
+
       <div class="footer-socials">
+
 
         <a
           href="https://github.com/alimousaali"
@@ -3823,6 +4136,7 @@
 
         </a>
 
+
         <a
           href="https://linkedin.com/in/ali-mousa"
           target="_blank"
@@ -3833,6 +4147,7 @@
           <i class="fab fa-linkedin-in"></i>
 
         </a>
+
 
         <a
           href="mailto:ali.mousa152004@gmail.com"
@@ -3849,26 +4164,36 @@
 
   </footer>
 
+
   <!-- =============================================
        JAVASCRIPT
   ============================================= -->
 
   <script>
 
+
     /* =============================================
        NAVBAR SCROLL EFFECT
     ============================================= */
 
-    const navbar = document.getElementById('navbar');
+    const navbar =
+      document.getElementById('navbar');
 
-    window.addEventListener('scroll', () => {
 
-      navbar.classList.toggle(
-        'scrolled',
-        window.scrollY > 40
-      );
+    window.addEventListener(
+      'scroll',
+      () => {
 
-    }, { passive: true });
+        navbar.classList.toggle(
+          'scrolled',
+          window.scrollY > 40
+        );
+
+      },
+      {
+        passive: true
+      }
+    );
 
 
     /* =============================================
@@ -3878,66 +4203,95 @@
     const hamburger =
       document.getElementById('hamburger');
 
+
     const navMobile =
       document.getElementById('navMobile');
 
+
     let mobileOpen = false;
 
-    hamburger.addEventListener('click', () => {
 
-      mobileOpen = !mobileOpen;
+    hamburger.addEventListener(
+      'click',
+      () => {
 
-      navMobile.style.display =
-        mobileOpen ? 'flex' : 'none';
+        mobileOpen = !mobileOpen;
 
-      const spans =
-        hamburger.querySelectorAll('span');
 
-      if (mobileOpen) {
+        navMobile.style.display =
+          mobileOpen ? 'flex' : 'none';
 
-        spans[0].style.transform =
-          'translateY(7px) rotate(45deg)';
 
-        spans[1].style.opacity = '0';
+        const spans =
+          hamburger.querySelectorAll('span');
 
-        spans[2].style.transform =
-          'translateY(-7px) rotate(-45deg)';
 
-      } else {
+        if (mobileOpen) {
 
-        spans.forEach(s => {
+          spans[0].style.transform =
+            'translateY(7px) rotate(45deg)';
 
-          s.style.transform = '';
-          s.style.opacity = '';
+          spans[1].style.opacity =
+            '0';
 
-        });
+          spans[2].style.transform =
+            'translateY(-7px) rotate(-45deg)';
+
+        } else {
+
+          spans.forEach(
+            s => {
+
+              s.style.transform =
+                '';
+
+              s.style.opacity =
+                '';
+
+            }
+          );
+
+        }
 
       }
+    );
 
-    });
 
     navMobile
       .querySelectorAll('a')
-      .forEach(a => {
+      .forEach(
+        a => {
 
-        a.addEventListener('click', () => {
+          a.addEventListener(
+            'click',
+            () => {
 
-          mobileOpen = false;
+              mobileOpen =
+                false;
 
-          navMobile.style.display = 'none';
+              navMobile.style.display =
+                'none';
 
-          hamburger
-            .querySelectorAll('span')
-            .forEach(s => {
 
-              s.style.transform = '';
-              s.style.opacity = '';
+              hamburger
+                .querySelectorAll('span')
+                .forEach(
+                  s => {
 
-            });
+                    s.style.transform =
+                      '';
 
-        });
+                    s.style.opacity =
+                      '';
 
-      });
+                  }
+                );
+
+            }
+          );
+
+        }
+      );
 
 
     /* =============================================
@@ -3947,31 +4301,47 @@
     const reveals =
       document.querySelectorAll('.reveal');
 
+
     const revealObs =
-      new IntersectionObserver((entries) => {
+      new IntersectionObserver(
+        (entries) => {
 
-        entries.forEach((e, i) => {
+          entries.forEach(
+            (e, i) => {
 
-          if (e.isIntersecting) {
+              if (e.isIntersecting) {
 
-            setTimeout(() => {
+                setTimeout(
+                  () => {
 
-              e.target.classList.add('visible');
+                    e.target.classList.add(
+                      'visible'
+                    );
 
-            }, i * 80);
+                  },
+                  i * 80
+                );
 
-            revealObs.unobserve(e.target);
 
-          }
+                revealObs.unobserve(
+                  e.target
+                );
 
-        });
+              }
 
-      }, {
-        threshold: 0.12
-      });
+            }
+          );
 
-    reveals.forEach(el =>
-      revealObs.observe(el)
+        },
+        {
+          threshold: 0.12
+        }
+      );
+
+
+    reveals.forEach(
+      el =>
+        revealObs.observe(el)
     );
 
 
@@ -3980,63 +4350,106 @@
     ============================================= */
 
     const sections =
-      document.querySelectorAll('section[id]');
+      document.querySelectorAll(
+        'section[id]'
+      );
+
 
     const navLinkIds = {
 
-      about: 'nav-about',
-      skills: 'nav-skills',
-      achievements: 'nav-ach',
-      certificates: 'nav-certs',
-      projects: 'nav-projects',
-      learning: 'nav-learning',
-      contact: 'nav-contact'
+      about:
+        'nav-about',
+
+      skills:
+        'nav-skills',
+
+      achievements:
+        'nav-ach',
+
+      certificates:
+        'nav-certs',
+
+      projects:
+        'nav-projects',
+
+      learning:
+        'nav-learning',
+
+      contact:
+        'nav-contact'
 
     };
 
+
     const navObs =
-      new IntersectionObserver((entries) => {
+      new IntersectionObserver(
+        (entries) => {
 
-        entries.forEach(e => {
+          entries.forEach(
+            e => {
 
-          if (e.isIntersecting) {
+              if (e.isIntersecting) {
 
-            Object.values(navLinkIds)
-              .forEach(id => {
+                Object.values(navLinkIds)
+                  .forEach(
+                    id => {
 
-                const el =
-                  document.getElementById(id);
+                      const el =
+                        document.getElementById(
+                          id
+                        );
 
-                if (el) {
-                  el.classList.remove('active');
+                      if (el) {
+
+                        el.classList.remove(
+                          'active'
+                        );
+
+                      }
+
+                    }
+                  );
+
+
+                const linkId =
+                  navLinkIds[
+                    e.target.id
+                  ];
+
+
+                if (linkId) {
+
+                  const el =
+                    document.getElementById(
+                      linkId
+                    );
+
+
+                  if (el) {
+
+                    el.classList.add(
+                      'active'
+                    );
+
+                  }
+
                 }
 
-              });
-
-            const linkId =
-              navLinkIds[e.target.id];
-
-            if (linkId) {
-
-              const el =
-                document.getElementById(linkId);
-
-              if (el) {
-                el.classList.add('active');
               }
 
             }
+          );
 
-          }
+        },
+        {
+          threshold: 0.4
+        }
+      );
 
-        });
 
-      }, {
-        threshold: 0.4
-      });
-
-    sections.forEach(s =>
-      navObs.observe(s)
+    sections.forEach(
+      s =>
+        navObs.observe(s)
     );
 
 
@@ -4046,187 +4459,141 @@
 
     document
       .getElementById('contactForm')
-      .addEventListener('submit', function (e) {
+      .addEventListener(
+        'submit',
+        function (e) {
 
-        e.preventDefault();
+          e.preventDefault();
 
-        const name =
-          document.getElementById('cf-name')
-            .value.trim();
 
-        const email =
-          document.getElementById('cf-email')
-            .value.trim();
+          const name =
+            document
+              .getElementById('cf-name')
+              .value
+              .trim();
 
-        const subject =
-          document.getElementById('cf-subject')
-            .value.trim() ||
-          'Portfolio Contact';
 
-        const msg =
-          document.getElementById('cf-msg')
-            .value.trim();
+          const email =
+            document
+              .getElementById('cf-email')
+              .value
+              .trim();
 
-        if (!name || !email || !msg) {
 
-          alert(
-            'Please fill in all required fields.'
-          );
+          const subject =
+            document
+              .getElementById('cf-subject')
+              .value
+              .trim() ||
+            'Portfolio Contact';
 
-          return;
-        }
 
-        const btn =
-          document.getElementById(
-            'form-submit-btn'
-          );
+          const msg =
+            document
+              .getElementById('cf-msg')
+              .value
+              .trim();
 
-        btn.innerHTML =
-          '<i class="fas fa-spinner fa-spin"></i> Sending…';
 
-        btn.disabled = true;
+          if (!name || !email || !msg) {
 
-        const mailTo =
-          'ali.mousa152004@gmail.com';
+            alert(
+              'Please fill in all required fields.'
+            );
 
-        const mailSubject =
-          encodeURIComponent(
-            subject + ' — from ' + name
-          );
+            return;
 
-        const mailBody =
-          encodeURIComponent(
+          }
 
-            'Name: ' + name + '\n' +
-            'Email: ' + email + '\n' +
-            'Subject: ' + subject + '\n\n' +
-            'Message:\n' + msg
 
-          );
+          const btn =
+            document.getElementById(
+              'form-submit-btn'
+            );
 
-        window.location.href =
-          'mailto:' +
-          mailTo +
-          '?subject=' +
-          mailSubject +
-          '&body=' +
-          mailBody;
-
-        setTimeout(() => {
-
-          document
-            .getElementById('contactForm')
-            .style.display = 'none';
-
-          document
-            .getElementById('formSuccess')
-            .style.display = 'block';
 
           btn.innerHTML =
-            '<i class="fas fa-paper-plane"></i> Send Message';
-
-          btn.disabled = false;
-
-        }, 1500);
-
-      });
+            '<i class="fas fa-spinner fa-spin"></i> Sending…';
 
 
-    /* =============================================
-       HERO STATS COUNT-UP
-    ============================================= */
+          btn.disabled =
+            true;
 
-    function countUp(
-      el,
-      target,
-      suffix,
-      duration = 1800
-    ) {
 
-      let start = 0;
+          const mailTo =
+            'ali.mousa152004@gmail.com';
 
-      const step =
-        target / (duration / 16);
 
-      const timer =
-        setInterval(() => {
+          const mailSubject =
+            encodeURIComponent(
+              subject +
+              ' — from ' +
+              name
+            );
 
-          start += step;
 
-          if (start >= target) {
+          const mailBody =
+            encodeURIComponent(
 
-            start = target;
+              'Name: ' +
+              name +
+              '\n' +
 
-            clearInterval(timer);
+              'Email: ' +
+              email +
+              '\n' +
 
-          }
+              'Subject: ' +
+              subject +
+              '\n\n' +
 
-          el.querySelector(
-            '.hero-stat-num'
-          ).innerHTML =
-            Math.floor(start) +
-            '<span>' +
-            suffix +
-            '</span>';
+              'Message:\n' +
+              msg
 
-        }, 16);
+            );
 
-    }
 
-    const statEls =
-      document.querySelectorAll(
-        '.hero-stat'
+          window.location.href =
+            'mailto:' +
+            mailTo +
+            '?subject=' +
+            mailSubject +
+            '&body=' +
+            mailBody;
+
+
+          setTimeout(
+            () => {
+
+              document
+                .getElementById(
+                  'contactForm'
+                )
+                .style.display =
+                'none';
+
+
+              document
+                .getElementById(
+                  'formSuccess'
+                )
+                .style.display =
+                'block';
+
+
+              btn.innerHTML =
+                '<i class="fas fa-paper-plane"></i> Send Message';
+
+
+              btn.disabled =
+                false;
+
+            },
+            1500
+          );
+
+        }
       );
-
-    const statData = [
-
-      {
-        target: 3,
-        suffix: '+'
-      },
-
-      {
-        target: 88,
-        suffix: '%'
-      },
-
-      {
-        target: 2,
-        suffix: '+'
-      }
-
-    ];
-
-    const heroObs =
-      new IntersectionObserver((entries) => {
-
-        entries.forEach(e => {
-
-          if (e.isIntersecting) {
-
-            statEls.forEach((el, i) => {
-
-              countUp(
-                el,
-                statData[i].target,
-                statData[i].suffix
-              );
-
-            });
-
-            heroObs.disconnect();
-
-          }
-
-        });
-
-      }, {
-        threshold: 0.3
-      });
-
-    if (statEls.length) {
-      heroObs.observe(statEls[0]);
-    }
 
 
     /* =============================================
@@ -4238,51 +4605,82 @@
         'sliderTrack'
       );
 
+
     const prevBtn =
       document.getElementById(
         'sliderPrev'
       );
+
 
     const nextBtn =
       document.getElementById(
         'sliderNext'
       );
 
+
     const dotsContainer =
       document.getElementById(
         'sliderDots'
       );
 
+
     const cards =
       track
-        ? Array.from(track.children)
+        ? Array.from(
+            track.children
+          )
         : [];
 
-    let currentIndex = 0;
 
-    if (track && cards.length > 0) {
+    let currentIndex =
+      0;
+
+
+    if (
+      track &&
+      cards.length > 0
+    ) {
+
 
       /* CREATE DOTS */
 
-      cards.forEach((_, i) => {
+      cards.forEach(
+        (_, i) => {
 
-        const dot =
-          document.createElement('div');
+          const dot =
+            document.createElement(
+              'div'
+            );
 
-        dot.classList.add('dot');
 
-        if (i === 0) {
-          dot.classList.add('active');
+          dot.classList.add(
+            'dot'
+          );
+
+
+          if (i === 0) {
+
+            dot.classList.add(
+              'active'
+            );
+
+          }
+
+
+          dot.addEventListener(
+            'click',
+            () =>
+              goToSlide(i)
+          );
+
+
+          dotsContainer.appendChild(
+            dot
+          );
+
         }
+      );
 
-        dot.addEventListener(
-          'click',
-          () => goToSlide(i)
-        );
-
-        dotsContainer.appendChild(dot);
-
-      });
 
       const dots =
         Array.from(
@@ -4295,52 +4693,77 @@
       function updateSlider() {
 
         const cardWidth =
-          cards[0].offsetWidth + 24;
+          cards[0].offsetWidth +
+          24;
+
 
         track.style.transform =
-          `translateX(-${currentIndex * cardWidth}px)`;
+          `translateX(-${
+            currentIndex *
+            cardWidth
+          }px)`;
 
-        dots.forEach((dot, i) => {
 
-          dot.classList.toggle(
-            'active',
-            i === currentIndex
-          );
+        dots.forEach(
+          (dot, i) => {
 
-        });
+            dot.classList.toggle(
+              'active',
+              i === currentIndex
+            );
+
+          }
+        );
+
 
         prevBtn.style.opacity =
           currentIndex === 0
             ? '0.3'
             : '1';
 
+
         prevBtn.style.pointerEvents =
           currentIndex === 0
             ? 'none'
             : 'auto';
 
+
         const containerWidth =
-          track.parentElement.offsetWidth;
+          track.parentElement
+            .offsetWidth;
+
 
         const visibleCards =
           Math.floor(
-            containerWidth / cardWidth
+            containerWidth /
+            cardWidth
           ) || 1;
+
 
         const maxIndex =
           Math.max(
             0,
-            cards.length - visibleCards
+            cards.length -
+            visibleCards
           );
 
-        if (currentIndex > maxIndex) {
-          currentIndex = maxIndex;
+
+        if (
+          currentIndex >
+          maxIndex
+        ) {
+
+          currentIndex =
+            maxIndex;
+
         }
+
 
         nextBtn.style.opacity =
           currentIndex >= maxIndex
             ? '0.3'
             : '1';
+
 
         nextBtn.style.pointerEvents =
           currentIndex >= maxIndex
@@ -4355,27 +4778,39 @@
       function goToSlide(index) {
 
         const cardWidth =
-          cards[0].offsetWidth + 24;
+          cards[0].offsetWidth +
+          24;
+
 
         const containerWidth =
-          track.parentElement.offsetWidth;
+          track.parentElement
+            .offsetWidth;
+
 
         const visibleCards =
           Math.floor(
-            containerWidth / cardWidth
+            containerWidth /
+            cardWidth
           ) || 1;
+
 
         const maxIndex =
           Math.max(
             0,
-            cards.length - visibleCards
+            cards.length -
+            visibleCards
           );
+
 
         currentIndex =
           Math.min(
-            Math.max(index, 0),
+            Math.max(
+              index,
+              0
+            ),
             maxIndex
           );
+
 
         updateSlider();
 
@@ -4392,6 +4827,7 @@
           )
       );
 
+
       prevBtn.addEventListener(
         'click',
         () =>
@@ -4402,6 +4838,7 @@
 
 
       updateSlider();
+
 
       window.addEventListener(
         'resize',
@@ -4414,6 +4851,7 @@
       let startX;
       let moveX;
 
+
       track.addEventListener(
         'touchstart',
         e => {
@@ -4423,6 +4861,7 @@
 
         }
       );
+
 
       track.addEventListener(
         'touchmove',
@@ -4434,18 +4873,30 @@
         }
       );
 
+
       track.addEventListener(
         'touchend',
         () => {
 
-          if (!startX || !moveX) {
+          if (
+            !startX ||
+            !moveX
+          ) {
+
             return;
+
           }
 
-          const diff =
-            startX - moveX;
 
-          if (Math.abs(diff) > 50) {
+          const diff =
+            startX -
+            moveX;
+
+
+          if (
+            Math.abs(diff) >
+            50
+          ) {
 
             if (diff > 0) {
 
@@ -4463,8 +4914,12 @@
 
           }
 
-          startX = null;
-          moveX = null;
+
+          startX =
+            null;
+
+          moveX =
+            null;
 
         }
       );
