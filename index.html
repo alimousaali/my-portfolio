@@ -6,17 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
     content="Ali Mousa – Data Analyst & Junior Data Scientist. Turning raw data into decisions that drive real business impact." />
-  <title>Ali Mousa | Data Analyst & Junior Data Scientist </title>
+  <title>Ali Mousa | Data Analyst & Junior Data Scientist</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
   <style>
     /* =============================================
        DESIGN TOKENS
     ============================================= */
+
     :root {
       --clr-bg: #050b18;
       --clr-surface: #0d1526;
@@ -29,12 +34,16 @@
       --clr-text: #e2e8f0;
       --clr-muted: #7a93b8;
       --clr-white: #ffffff;
+
       --radius-sm: 8px;
       --radius-md: 14px;
       --radius-lg: 22px;
+
       --shadow-card: 0 8px 32px rgba(0, 0, 0, .45);
       --shadow-glow: 0 0 40px rgba(59, 130, 246, .25);
+
       --transition: .3s cubic-bezier(.4, 0, .2, 1);
+
       --font-main: 'Inter', sans-serif;
       --font-display: 'Space Grotesk', sans-serif;
     }
@@ -42,6 +51,7 @@
     /* =============================================
        RESET & BASE
     ============================================= */
+
     *,
     *::before,
     *::after {
@@ -85,6 +95,7 @@
     /* =============================================
        SCROLLBAR
     ============================================= */
+
     ::-webkit-scrollbar {
       width: 6px;
     }
@@ -101,6 +112,7 @@
     /* =============================================
        ANIMATED GRADIENT BACKGROUND
     ============================================= */
+
     .bg-orbs {
       position: fixed;
       inset: 0;
@@ -157,6 +169,7 @@
     /* =============================================
        LAYOUT HELPERS
     ============================================= */
+
     .container {
       max-width: 1160px;
       margin: 0 auto;
@@ -227,6 +240,7 @@
     /* =============================================
        NAVIGATION
     ============================================= */
+
     #navbar {
       position: fixed;
       top: 0;
@@ -234,7 +248,9 @@
       right: 0;
       z-index: 1000;
       padding: 0 24px;
-      transition: background var(--transition), backdrop-filter var(--transition), box-shadow var(--transition);
+      transition: background var(--transition),
+        backdrop-filter var(--transition),
+        box-shadow var(--transition);
     }
 
     #navbar.scrolled {
@@ -276,7 +292,8 @@
       color: var(--clr-muted);
       padding: 7px 14px;
       border-radius: 99px;
-      transition: color var(--transition), background var(--transition);
+      transition: color var(--transition),
+        background var(--transition);
     }
 
     .nav-links a:hover {
@@ -298,7 +315,9 @@
       background: var(--clr-primary) !important;
       border-radius: 99px !important;
       padding: 8px 20px !important;
-      transition: background var(--transition), transform var(--transition), box-shadow var(--transition) !important;
+      transition: background var(--transition),
+        transform var(--transition),
+        box-shadow var(--transition) !important;
     }
 
     .nav-cv-btn:hover {
@@ -349,6 +368,7 @@
     /* =============================================
        HERO
     ============================================= */
+
     #hero {
       min-height: 100vh;
       display: flex;
@@ -413,7 +433,12 @@
     }
 
     .hero-title .grad {
-      background: linear-gradient(135deg, var(--clr-primary) 0%, var(--clr-accent) 60%, var(--clr-accent2) 100%);
+      background: linear-gradient(
+        135deg,
+        var(--clr-primary) 0%,
+        var(--clr-accent) 60%,
+        var(--clr-accent2) 100%
+      );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -450,7 +475,9 @@
       border-radius: var(--radius-sm);
       border: none;
       cursor: pointer;
-      transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+      transition: background var(--transition),
+        transform var(--transition),
+        box-shadow var(--transition);
     }
 
     .btn-primary:hover {
@@ -471,7 +498,10 @@
       border-radius: var(--radius-sm);
       border: 1px solid var(--clr-border);
       cursor: pointer;
-      transition: border-color var(--transition), color var(--transition), background var(--transition), transform var(--transition);
+      transition: border-color var(--transition),
+        color var(--transition),
+        background var(--transition),
+        transform var(--transition);
     }
 
     .btn-outline:hover {
@@ -512,7 +542,10 @@
       letter-spacing: .06em;
     }
 
-    /* Hero image */
+    /* =============================================
+       HERO IMAGE
+    ============================================= */
+
     .hero-image-wrap {
       position: relative;
       display: flex;
@@ -524,7 +557,13 @@
       position: absolute;
       inset: -20px;
       border-radius: 50%;
-      background: conic-gradient(from 0deg, var(--clr-primary), var(--clr-accent), var(--clr-accent2), var(--clr-primary));
+      background: conic-gradient(
+        from 0deg,
+        var(--clr-primary),
+        var(--clr-accent),
+        var(--clr-accent2),
+        var(--clr-primary)
+      );
       animation: spin 8s linear infinite;
       opacity: .55;
     }
@@ -611,6 +650,7 @@
     /* =============================================
        ABOUT
     ============================================= */
+
     #about {
       background: var(--clr-surface);
     }
@@ -657,7 +697,8 @@
       border: 1px solid var(--clr-border);
       border-radius: var(--radius-md);
       padding: 16px 20px;
-      transition: border-color var(--transition), transform var(--transition);
+      transition: border-color var(--transition),
+        transform var(--transition);
     }
 
     .about-info-item:hover {
@@ -694,6 +735,7 @@
     /* =============================================
        SKILLS
     ============================================= */
+
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -705,7 +747,8 @@
       border: 1px solid var(--clr-border);
       border-radius: var(--radius-md);
       padding: 28px;
-      transition: border-color var(--transition), box-shadow var(--transition);
+      transition: border-color var(--transition),
+        box-shadow var(--transition);
     }
 
     .skill-group:hover {
@@ -728,49 +771,32 @@
     }
 
     .skill-item {
-      margin-bottom: 18px;
+      margin-bottom: 16px;
     }
 
     .skill-item:last-child {
       margin-bottom: 0;
     }
 
-    .skill-meta {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 7px;
-    }
-
     .skill-name {
       font-size: .88rem;
       font-weight: 600;
       color: var(--clr-text);
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
-    .skill-pct {
-      font-size: .8rem;
-      font-weight: 700;
+    .skill-name::before {
+      content: '•';
       color: var(--clr-primary);
-    }
-
-    .skill-bar {
-      height: 6px;
-      background: rgba(255, 255, 255, .07);
-      border-radius: 99px;
-      overflow: hidden;
-    }
-
-    .skill-fill {
-      height: 100%;
-      border-radius: 99px;
-      background: linear-gradient(90deg, var(--clr-primary), var(--clr-accent));
-      width: 0;
-      transition: width 1.2s cubic-bezier(.4, 0, .2, 1);
+      font-size: 1.1rem;
     }
 
     /* =============================================
        KEY ACHIEVEMENTS
     ============================================= */
+
     #achievements {
       background: var(--clr-surface);
     }
@@ -791,7 +817,9 @@
       gap: 14px;
       position: relative;
       overflow: hidden;
-      transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+      transition: border-color var(--transition),
+        transform var(--transition),
+        box-shadow var(--transition);
     }
 
     .achievement-card::before {
@@ -801,7 +829,11 @@
       left: 0;
       right: 0;
       height: 3px;
-      background: linear-gradient(90deg, var(--clr-primary), var(--clr-accent));
+      background: linear-gradient(
+        90deg,
+        var(--clr-primary),
+        var(--clr-accent)
+      );
     }
 
     .achievement-card:hover {
@@ -848,6 +880,7 @@
     /* =============================================
        CERTIFICATES SLIDER
     ============================================= */
+
     .slider-wrapper {
       position: relative;
       width: 100%;
@@ -863,7 +896,7 @@
     .slider-track {
       display: flex;
       gap: 24px;
-      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: transform 0.6s cubic-bezier(.4, 0, .2, 1);
       will-change: transform;
       padding: 10px;
     }
@@ -876,7 +909,9 @@
       display: flex;
       flex-direction: column;
       overflow: hidden;
-      transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+      transition: border-color var(--transition),
+        transform var(--transition),
+        box-shadow var(--transition);
       cursor: pointer;
       text-decoration: none;
     }
@@ -903,7 +938,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: transform .6s cubic-bezier(.4, 0, .2, 1);
     }
 
     .cert-card:hover .cert-img-wrap img {
@@ -917,14 +952,18 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(96, 239, 255, 0.08) 100%);
+      background: linear-gradient(
+        135deg,
+        rgba(59, 130, 246, .08) 0%,
+        rgba(96, 239, 255, .08) 100%
+      );
       color: var(--clr-primary);
       gap: 12px;
     }
 
     .cert-placeholder i {
       font-size: 3.5rem;
-      opacity: 0.4;
+      opacity: .4;
     }
 
     .cert-body {
@@ -936,7 +975,6 @@
 
     .cert-icon-small {
       display: none;
-      /* Moved to img wrap or placeholder */
     }
 
     .cert-content {
@@ -946,9 +984,9 @@
     }
 
     .cert-issuer {
-      font-size: 0.7rem;
+      font-size: .7rem;
       text-transform: uppercase;
-      letter-spacing: 0.12em;
+      letter-spacing: .12em;
       color: var(--clr-accent);
       font-weight: 700;
     }
@@ -966,10 +1004,10 @@
       display: flex;
       align-items: center;
       gap: 8px;
-      font-size: 0.82rem;
+      font-size: .82rem;
       font-weight: 700;
       color: var(--clr-primary);
-      transition: gap 0.3s ease;
+      transition: gap .3s ease;
     }
 
     .cert-card:hover .cert-view {
@@ -983,7 +1021,7 @@
       width: 50px;
       height: 50px;
       border-radius: 50%;
-      background: rgba(13, 21, 38, 0.9);
+      background: rgba(13, 21, 38, .9);
       border: 1px solid var(--clr-border);
       color: var(--clr-white);
       display: flex;
@@ -993,13 +1031,13 @@
       z-index: 10;
       transition: all var(--transition);
       backdrop-filter: blur(12px);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, .3);
     }
 
     .slider-btn:hover {
       background: var(--clr-primary);
       border-color: var(--clr-primary);
-      box-shadow: 0 0 25px rgba(59, 130, 246, 0.45);
+      box-shadow: 0 0 25px rgba(59, 130, 246, .45);
       transform: translateY(-50%) scale(1.1);
     }
 
@@ -1024,7 +1062,7 @@
       border-radius: 50%;
       background: var(--clr-border);
       cursor: pointer;
-      transition: all 0.3s ease;
+      transition: all .3s ease;
     }
 
     .dot.active {
@@ -1051,13 +1089,14 @@
       .slider-btn {
         width: 40px;
         height: 40px;
-        font-size: 0.9rem;
+        font-size: .9rem;
       }
     }
 
     /* =============================================
        PROJECTS
     ============================================= */
+
     .projects-grid {
       display: flex;
       flex-direction: column;
@@ -1072,7 +1111,9 @@
       display: grid;
       grid-template-columns: 1.1fr 1fr;
       gap: 0;
-      transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+      transition: border-color var(--transition),
+        transform var(--transition),
+        box-shadow var(--transition);
     }
 
     .project-card:hover {
@@ -1108,7 +1149,7 @@
       width: 100%;
       height: 100%;
       object-fit: contain;
-      filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5));
+      filter: drop-shadow(0 10px 30px rgba(0, 0, 0, .5));
       transition: transform .6s cubic-bezier(.4, 0, .2, 1);
     }
 
@@ -1132,7 +1173,7 @@
     }
 
     .project-body {
-      padding: 36px 36px;
+      padding: 36px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -1203,7 +1244,8 @@
       background: rgba(255, 255, 255, .05);
       border: 1px solid var(--clr-border);
       color: var(--clr-muted);
-      transition: color var(--transition), border-color var(--transition);
+      transition: color var(--transition),
+        border-color var(--transition);
     }
 
     .project-card:hover .project-stack .stk {
@@ -1252,6 +1294,7 @@
     /* =============================================
        CURRENTLY LEARNING
     ============================================= */
+
     #learning {
       background: var(--clr-surface);
     }
@@ -1272,7 +1315,9 @@
       gap: 12px;
       position: relative;
       overflow: hidden;
-      transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+      transition: border-color var(--transition),
+        transform var(--transition),
+        box-shadow var(--transition);
     }
 
     .learning-card:hover {
@@ -1304,36 +1349,10 @@
       line-height: 1.5;
     }
 
-    .lc-progress-wrap {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-top: 4px;
-    }
-
-    .lc-progress {
-      flex: 1;
-      height: 5px;
-      background: rgba(255, 255, 255, .07);
-      border-radius: 99px;
-      overflow: hidden;
-    }
-
-    .lc-progress-fill {
-      height: 100%;
-      border-radius: 99px;
-      background: linear-gradient(90deg, var(--clr-accent2), var(--clr-accent));
-    }
-
-    .lc-pct {
-      font-size: .75rem;
-      font-weight: 700;
-      color: var(--clr-accent2);
-    }
-
     /* =============================================
        CONTACT
     ============================================= */
+
     #contact .contact-wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -1372,7 +1391,9 @@
       border: 1px solid var(--clr-border);
       border-radius: var(--radius-md);
       padding: 16px 20px;
-      transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+      transition: border-color var(--transition),
+        transform var(--transition),
+        box-shadow var(--transition);
     }
 
     .contact-link:hover {
@@ -1438,7 +1459,8 @@
       padding: 12px 16px;
       outline: none;
       resize: vertical;
-      transition: border-color var(--transition), box-shadow var(--transition);
+      transition: border-color var(--transition),
+        box-shadow var(--transition);
     }
 
     .form-group input:focus,
@@ -1466,7 +1488,9 @@
       align-items: center;
       justify-content: center;
       gap: 8px;
-      transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+      transition: background var(--transition),
+        transform var(--transition),
+        box-shadow var(--transition);
     }
 
     .form-submit:hover {
@@ -1490,6 +1514,7 @@
     /* =============================================
        FOOTER
     ============================================= */
+
     footer {
       background: var(--clr-surface);
       border-top: 1px solid var(--clr-border);
@@ -1531,7 +1556,9 @@
       justify-content: center;
       color: var(--clr-muted);
       font-size: .9rem;
-      transition: border-color var(--transition), color var(--transition), background var(--transition);
+      transition: border-color var(--transition),
+        color var(--transition),
+        background var(--transition);
     }
 
     .footer-social:hover {
@@ -1541,12 +1568,14 @@
     }
 
     /* =============================================
-       SCROLL-REVEAL ANIMATION
+       SCROLL REVEAL
     ============================================= */
+
     .reveal {
       opacity: 0;
       transform: translateY(30px);
-      transition: opacity .7s cubic-bezier(.4, 0, .2, 1), transform .7s cubic-bezier(.4, 0, .2, 1);
+      transition: opacity .7s cubic-bezier(.4, 0, .2, 1),
+        transform .7s cubic-bezier(.4, 0, .2, 1);
     }
 
     .reveal.visible {
@@ -1557,7 +1586,9 @@
     /* =============================================
        RESPONSIVE
     ============================================= */
+
     @media (max-width: 900px) {
+
       .hero-grid {
         grid-template-columns: 1fr;
         text-align: center;
@@ -1586,12 +1617,12 @@
 
       .hb1 {
         bottom: 10px;
-        left: 0px;
+        left: 0;
       }
 
       .hb2 {
         top: 10px;
-        right: 0px;
+        right: 0;
       }
 
       .about-grid {
@@ -1621,6 +1652,7 @@
     }
 
     @media (max-width: 600px) {
+
       section {
         padding: 72px 0;
       }
@@ -1655,6 +1687,7 @@
     }
 
     @media (max-width: 420px) {
+
       .achievements-grid {
         grid-template-columns: 1fr;
       }
@@ -1669,6 +1702,7 @@
 <body>
 
   <!-- BACKGROUND ORBS -->
+
   <div class="bg-orbs">
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
@@ -1676,12 +1710,19 @@
   </div>
 
   <!-- =============================================
-     NAVIGATION
-============================================= -->
+       NAVIGATION
+  ============================================= -->
+
   <nav id="navbar">
+
     <div class="nav-inner">
-      <a href="#hero" class="nav-logo">Ali<span>.</span>Mousa</a>
+
+      <a href="#hero" class="nav-logo">
+        Ali<span>.</span>Mousa
+      </a>
+
       <div class="nav-links">
+
         <a href="#about" id="nav-about">About</a>
         <a href="#skills" id="nav-skills">Skills</a>
         <a href="#achievements" id="nav-ach">Achievements</a>
@@ -1689,15 +1730,33 @@
         <a href="#projects" id="nav-projects">Projects</a>
         <a href="#learning" id="nav-learning">Learning</a>
         <a href="#contact" id="nav-contact">Contact</a>
-        <a href="Ali_Mousa_Ali_Resume.pdf" download class="nav-cv-btn" id="nav-cv">
-          <i class="fas fa-download"></i> Download CV
+
+        <a href="Ali_Mousa_Ali_Resume.pdf"
+          download
+          class="nav-cv-btn"
+          id="nav-cv">
+
+          <i class="fas fa-download"></i>
+          Download CV
+
         </a>
+
       </div>
-      <div class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
+
+      <div class="hamburger"
+        id="hamburger"
+        aria-label="Toggle menu">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
       </div>
+
     </div>
+
     <div class="nav-mobile" id="navMobile">
+
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#achievements">Achievements</a>
@@ -1705,646 +1764,1558 @@
       <a href="#projects">Projects</a>
       <a href="#learning">Currently Learning</a>
       <a href="#contact">Contact</a>
-      <a href="Ali_Mousa_Ali_Resume.pdf" download><i class="fas fa-download"></i> Download CV</a>
+
+      <a href="Ali_Mousa_Ali_Resume.pdf" download>
+        <i class="fas fa-download"></i>
+        Download CV
+      </a>
+
     </div>
+
   </nav>
 
   <!-- =============================================
-     HERO
-============================================= -->
+       HERO
+  ============================================= -->
+
   <section id="hero">
+
     <div class="container">
+
       <div class="hero-grid">
-        <!-- Text -->
+
         <div>
+
           <div class="hero-tag">
+
             <span class="dot"></span>
+
             Available for Opportunities
+
           </div>
+
           <h1 class="hero-title">
+
             Data Analyst &amp;<br>
-            <span class="grad">Data Scientist</span><br>
+
+            <span class="grad">
+              Data Scientist
+            </span>
+
+            <br>
+
             Junior
+
           </h1>
+
           <p class="hero-value">
-            I turn <strong>raw data into decisions</strong> — building ML models, interactive BI dashboards,
-            and data-driven systems that deliver <strong>measurable business impact</strong>.
+
+            I turn <strong>raw data into decisions</strong> —
+            building ML models, interactive BI dashboards,
+            and data-driven systems that deliver
+            <strong>measurable business impact</strong>.
+
           </p>
+
           <div class="hero-btns">
-            <a href="#projects" class="btn-primary">
-              <i class="fas fa-rocket"></i> View My Work
+
+            <a href="#projects"
+              class="btn-primary">
+
+              <i class="fas fa-rocket"></i>
+              View My Work
+
             </a>
-            <a href="resume.pdf" download class="btn-outline" id="hero-cv-btn">
-              <i class="fas fa-download"></i> Download CV
+
+            <a href="Ali_Mousa_Ali_Resume.pdf"
+              download
+              class="btn-outline"
+              id="hero-cv-btn">
+
+              <i class="fas fa-download"></i>
+              Download CV
+
             </a>
+
           </div>
+
           <div class="hero-stats">
+
             <div class="hero-stat">
-              <div class="hero-stat-num">3<span>+</span></div>
-              <div class="hero-stat-label">Projects Delivered</div>
+
+              <div class="hero-stat-num">
+                3<span>+</span>
+              </div>
+
+              <div class="hero-stat-label">
+                Projects Delivered
+              </div>
+
             </div>
+
             <div class="hero-stat">
-              <div class="hero-stat-num">89<span>%</span></div>
-              <div class="hero-stat-label">Best Model Accuracy</div>
+
+              <div class="hero-stat-num">
+                88<span>%</span>
+              </div>
+
+              <div class="hero-stat-label">
+                Best Model Accuracy
+              </div>
+
             </div>
+
             <div class="hero-stat">
-              <div class="hero-stat-num">2<span>+</span></div>
-              <div class="hero-stat-label">BI Dashboards</div>
+
+              <div class="hero-stat-num">
+                2<span>+</span>
+              </div>
+
+              <div class="hero-stat-label">
+                BI Dashboards
+              </div>
+
             </div>
+
           </div>
+
         </div>
 
-        <!-- Image -->
+        <!-- IMAGE -->
+
         <div class="hero-image-wrap">
+
           <div class="hero-image-ring"></div>
           <div class="hero-image-ring2"></div>
-          <img src="profile.jpeg" alt="Ali Mousa - Data Analyst & ML Engineer" class="hero-img" id="hero-profile-img" />
+
+          <img
+            src="profile.jpeg"
+            alt="Ali Mousa - Data Analyst & ML Engineer"
+            class="hero-img"
+            id="hero-profile-img" />
+
           <div class="hero-badge-float hb1">
+
             <span class="icon">🤖</span>
+
             <div>
-              <div class="bf-label">Face Recognition</div>
-              <div class="bf-val">Live System Ready</div>
+
+              <div class="bf-label">
+                Face Recognition
+              </div>
+
             </div>
+
           </div>
+
           <div class="hero-badge-float hb2">
+
             <span class="icon">📊</span>
+
             <div>
-              <div class="bf-label">ML Model Accuracy</div>
-              <div class="bf-val"></div>
+
+              <div class="bf-label">
+                Machine Learning
+              </div>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
 
   <!-- =============================================
-     ABOUT
-============================================= -->
+       ABOUT
+  ============================================= -->
+
   <section id="about">
+
     <div class="container">
+
       <div class="about-grid reveal">
+
         <div class="about-text">
-          <div class="section-tag"><i class="fas fa-user"></i> About Me</div>
-          <h2 class="section-title">Turning Data Into Competitive Advantage</h2>
+
+          <div class="section-tag">
+
+            <i class="fas fa-user"></i>
+            About Me
+
+          </div>
+
+          <h2 class="section-title">
+            Turning Data Into Competitive Advantage
+          </h2>
+
           <p>
-            I'm <strong>Ali Mousa</strong>, a Data Analyst &amp; Junior Data Scientist with a passion for
-            extracting actionable insights from complex datasets and building intelligent, real-world systems.
+
+            I'm <strong>Ali Mousa</strong>, a Data Analyst &amp;
+            Junior Data Scientist with a passion for extracting
+            actionable insights from complex datasets and building
+            intelligent, real-world systems.
+
           </p>
+
           <p>
-            My work spans the full data pipeline — from cleaning and exploratory analysis to building
-            <strong>predictive ML models</strong>, deploying <strong>real-time computer vision systems</strong>,
+
+            My work spans the full data pipeline — from cleaning
+            and exploratory analysis to building
+            <strong>predictive ML models</strong>,
+            deploying <strong>real-time computer vision systems</strong>,
             and designing <strong>executive-level Power BI dashboards</strong>.
+
           </p>
+
           <div class="about-highlight-box">
-            "I don't just analyze data — I solve business problems. Every model, chart, and
-            system I build is designed to drive a decision."
+
+            "I don't just analyze data — I solve business problems.
+            Every model, chart, and system I build is designed to
+            drive a decision."
+
           </div>
+
           <p>
-            I thrive at the intersection of <strong>statistics, programming, and business context</strong>.
-            Whether it's boosting marketing conversion rates or identifying faces in real-time, I deliver
-            solutions that create real, measurable value.
+
+            I thrive at the intersection of
+            <strong>statistics, programming, and business context</strong>.
+            Whether it's boosting marketing conversion rates or
+            identifying faces in real-time, I deliver solutions
+            that create real, measurable value.
+
           </p>
+
         </div>
+
         <div class="about-info">
+
           <div class="about-info-item">
-            <div class="aii-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div>
-              <div class="aii-label">Location</div>
-              <div class="aii-val">Egypt — Open to Remote &amp; Relocation</div>
+
+            <div class="aii-icon">
+              <i class="fas fa-map-marker-alt"></i>
             </div>
+
+            <div>
+
+              <div class="aii-label">
+                Location
+              </div>
+
+              <div class="aii-val">
+                Egypt — Open to Remote &amp; Relocation
+              </div>
+
+            </div>
+
           </div>
+
           <div class="about-info-item">
-            <div class="aii-icon"><i class="fas fa-graduation-cap"></i></div>
-            <div>
-              <div class="aii-label">Education</div>
-              <div class="aii-val">Data Science &amp; Data Analytics</div>
+
+            <div class="aii-icon">
+              <i class="fas fa-graduation-cap"></i>
             </div>
+
+            <div>
+
+              <div class="aii-label">
+                Education
+              </div>
+
+              <div class="aii-val">
+                Data Science &amp; Data Analytics
+              </div>
+
+            </div>
+
           </div>
+
           <div class="about-info-item">
-            <div class="aii-icon"><i class="fas fa-language"></i></div>
-            <div>
-              <div class="aii-label">Languages</div>
-              <div class="aii-val">Arabic (Native) · English (intermediate)</div>
+
+            <div class="aii-icon">
+              <i class="fas fa-language"></i>
             </div>
+
+            <div>
+
+              <div class="aii-label">
+                Languages
+              </div>
+
+              <div class="aii-val">
+                Arabic (Native) · English (Intermediate)
+              </div>
+
+            </div>
+
           </div>
+
           <div class="about-info-item">
-            <div class="aii-icon"><i class="fas fa-briefcase"></i></div>
-            <div>
-              <div class="aii-label">Status</div>
-              <div class="aii-val">Actively Seeking Opportunities</div>
+
+            <div class="aii-icon">
+              <i class="fas fa-briefcase"></i>
             </div>
+
+            <div>
+
+              <div class="aii-label">
+                Status
+              </div>
+
+              <div class="aii-val">
+                Actively Seeking Opportunities
+              </div>
+
+            </div>
+
           </div>
+
           <div class="about-info-item">
-            <div class="aii-icon"><i class="fas fa-code"></i></div>
-            <div>
-              <div class="aii-label">Core Stack</div>
-              <div class="aii-val">Python · SQL · Power BI · Scikit-learn</div>
+
+            <div class="aii-icon">
+              <i class="fas fa-code"></i>
             </div>
+
+            <div>
+
+              <div class="aii-label">
+                Core Stack
+              </div>
+
+              <div class="aii-val">
+                Python · SQL · Power BI · Scikit-learn
+              </div>
+
+            </div>
+
           </div>
+
           <div class="about-info-item">
-            <div class="aii-icon"><i class="fas fa-heart"></i></div>
-            <div>
-              <div class="aii-label">Interests</div>
-              <div class="aii-val">ML Deployment · Computer Vision · Business Intelligence</div>
+
+            <div class="aii-icon">
+              <i class="fas fa-heart"></i>
             </div>
+
+            <div>
+
+              <div class="aii-label">
+                Interests
+              </div>
+
+              <div class="aii-val">
+                ML Deployment · Computer Vision · Business Intelligence
+              </div>
+
+            </div>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
 
   <!-- =============================================
-     SKILLS
-============================================= -->
+       SKILLS
+  ============================================= -->
+
   <section id="skills">
+
     <div class="container">
+
       <div class="reveal">
-        <div class="section-tag"><i class="fas fa-tools"></i> Technical Skills</div>
-        <h2 class="section-title">My Toolbox</h2>
-        <p class="section-sub">A realistic breakdown of the tools and technologies I use to deliver data-driven
-          solutions.</p>
+
+        <div class="section-tag">
+
+          <i class="fas fa-tools"></i>
+          Technical Skills
+
+        </div>
+
+        <h2 class="section-title">
+          My Toolbox
+        </h2>
+
+        <p class="section-sub">
+
+          A realistic breakdown of the tools and technologies
+          I use to deliver data-driven solutions.
+
+        </p>
+
       </div>
+
       <div class="skills-grid reveal">
-        <!-- Data Analysis -->
+
+        <!-- DATA ANALYSIS -->
+
         <div class="skill-group">
+
           <div class="skill-group-title">
-            <span class="sg-icon">📊</span> Data Analysis &amp; Visualization
+
+            <span class="sg-icon">📊</span>
+
+            Data Analysis &amp; Visualization
+
           </div>
+
           <div class="skill-item">
-            <div class="skill-meta"><span class="skill-name">Python (Pandas, NumPy)</span><span
-                class="skill-pct"></span></div>
-            <div class="skill-bar">
-              <div class="skill-fill" data-width=""></div>
+            <div class="skill-name">
+              Python (Pandas, NumPy)
             </div>
           </div>
+
           <div class="skill-item">
-            <div class="skill-meta"><span class="skill-name">Power BI</span><span class="skill-pct"></span></div>
-            <div class="skill-bar">
-              <div class="skill-fill" data-width=""></div>
+            <div class="skill-name">
+              Power BI
             </div>
           </div>
+
           <div class="skill-item">
-            <div class="skill-meta"><span class="skill-name">Matplotlib / Seaborn</span><span
-                class="skill-pct"></span></div>
-            <div class="skill-bar">
-              <div class="skill-fill" data-width=""></div>
+            <div class="skill-name">
+              Matplotlib / Seaborn
             </div>
           </div>
+
           <div class="skill-item">
-            <div class="skill-meta"><span class="skill-name">Excel / Google Sheets</span><span
-                class="skill-pct"></span></div>
-            <div class="skill-bar">
-              <div class="skill-fill" data-width=""></div>
+            <div class="skill-name">
+              Excel / Google Sheets
             </div>
           </div>
+
         </div>
-        <!-- Machine Learning -->
+
+        <!-- MACHINE LEARNING -->
+
         <div class="skill-group">
+
           <div class="skill-group-title">
-            <span class="sg-icon">🤖</span> Machine Learning &amp; AI
+
+            <span class="sg-icon">🤖</span>
+
+            Machine Learning &amp; AI
+
           </div>
+
           <div class="skill-item">
-            <div class="skill-meta"><span class="skill-name">Scikit-learn</span><span class="skill-pct"></span></div>
-            <div class="skill-bar">
-              <div class="skill-fill" data-width=""></div>
+            <div class="skill-name">
+              Scikit-learn
             </div>
           </div>
+
           <div class="skill-item">
-            <div class="skill-meta"><span class="skill-name">OpenCV / face_recognition</span><span
-                class="skill-pct"></span></div>
-            <div class="skill-bar">
-              <div class="skill-fill" data-width=""></div>
+            <div class="skill-name">
+              OpenCV / face_recognition
             </div>
           </div>
+
           <div class="skill-item">
-            <div class="skill-meta"><span class="skill-name">Feature Engineering</span><span
-                class="skill-pct"></span></div>
-            <div class="skill-bar">
-              <div class="skill-fill" data-width=""></div>
+            <div class="skill-name">
+              Feature Engineering
             </div>
           </div>
+
           <div class="skill-item">
-            <div class="skill-meta"><span class="skill-name">Model Evaluation & Tuning</span><span
-                class="skill-pct"></span></div>
-            <div class="skill-bar">
-              <div class="skill-fill" data-width=""></div>
+            <div class="skill-name">
+              Model Evaluation &amp; Tuning
             </div>
           </div>
+
         </div>
-        <!-- Data Engineering -->
+
+        <!-- DATA ENGINEERING -->
+
         <div class="skill-group">
+
           <div class="skill-group-title">
-            <span class="sg-icon">🗄️</span> Data &amp; Engineering
+
+            <span class="sg-icon">🗄️</span>
+
+            Data &amp; Engineering
+
           </div>
+
           <div class="skill-item">
-            <div class="skill-meta"><span class="skill-name">SQL Server</span><span class="skill-pct"></span></div>
-            <div class="skill-bar">
-              <div class="skill-fill" data-width=""></div>
+            <div class="skill-name">
+              SQL Server
             </div>
           </div>
+
           <div class="skill-item">
-            <div class="skill-meta"><span class="skill-name">Data Cleaning &amp; EDA</span><span
-                class="skill-pct"></span></div>
-            <div class="skill-bar">
-              <div class="skill-fill" data-width=""></div>
+            <div class="skill-name">
+              Data Cleaning &amp; EDA
             </div>
           </div>
+
           <div class="skill-item">
-            <div class="skill-meta"><span class="skill-name">Git / GitHub</span><span class="skill-pct"></span></div>
-            <div class="skill-bar">
-              <div class="skill-fill" data-width=""></div>
+            <div class="skill-name">
+              Git / GitHub
             </div>
           </div>
+
           <div class="skill-item">
-            <div class="skill-meta"><span class="skill-name">Python (OOP / Scripts)</span><span
-                class="skill-pct"></span></div>
-            <div class="skill-bar">
-              <div class="skill-fill" data-width=""></div>
+            <div class="skill-name">
+              Python (OOP / Scripts)
             </div>
           </div>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
 
   <!-- =============================================
-     KEY ACHIEVEMENTS
-============================================= -->
+       KEY ACHIEVEMENTS
+  ============================================= -->
+
   <section id="achievements">
+
     <div class="container">
+
       <div class="reveal">
-        <div class="section-tag"><i class="fas fa-trophy"></i> Key Achievements</div>
-        <h2 class="section-title">Results That Speak</h2>
-        <p class="section-sub">Concrete outcomes from real projects — not just theories.</p>
+
+        <div class="section-tag">
+
+          <i class="fas fa-trophy"></i>
+          Key Achievements
+
+        </div>
+
+        <h2 class="section-title">
+          Results That Speak
+        </h2>
+
+        <p class="section-sub">
+          Concrete outcomes from real projects — not just theories.
+        </p>
+
       </div>
+
       <div class="achievements-grid reveal">
+
         <div class="achievement-card">
+
           <div class="ach-icon">🎯</div>
-          <div class="ach-metric"><span></span></div>
-          <div class="ach-label">ML Model Accuracy</div>
-          <div class="ach-desc">Built a classification model on the bank-full dataset (45K+ records) achieving 89%
-            accuracy with precision-tuned threshold optimization.</div>
+
+          <div class="ach-metric">
+            <span></span>
+          </div>
+
+          <div class="ach-label">
+            ML Model Accuracy
+          </div>
+
+          <div class="ach-desc">
+
+            Built a classification model on the bank-full dataset
+            (45K+ records) achieving 89% accuracy with
+            precision-tuned threshold optimization.
+
+          </div>
+
         </div>
+
         <div class="achievement-card">
+
           <div class="ach-icon">👁️</div>
-          <div class="ach-metric">Real<span>-Time</span></div>
-          <div class="ach-label">Face Recognition System</div>
-          <div class="ach-desc">Developed a live patient identification system using OpenCV + face_recognition with
-            automated check-in logging and surveillance capabilities.</div>
+
+          <div class="ach-metric">
+            Real<span>-Time</span>
+          </div>
+
+          <div class="ach-label">
+            Face Recognition System
+          </div>
+
+          <div class="ach-desc">
+
+            Developed a live patient identification system using
+            OpenCV + face_recognition with automated check-in
+            logging and surveillance capabilities.
+
+          </div>
+
         </div>
+
         <div class="achievement-card">
+
           <div class="ach-icon">📈</div>
-          <div class="ach-metric">45<span>K+</span></div>
-          <div class="ach-label">Records Analyzed</div>
-          <div class="ach-desc">Performed end-to-end EDA, customer segmentation, and risk profiling on 45,000+ bank
-            marketing records for strategic campaign optimization.</div>
+
+          <div class="ach-metric">
+            45<span>K+</span>
+          </div>
+
+          <div class="ach-label">
+            Records Analyzed
+          </div>
+
+          <div class="ach-desc">
+
+            Performed end-to-end EDA, customer segmentation,
+            and risk profiling on 45,000+ bank marketing records
+            for strategic campaign optimization.
+
+          </div>
+
         </div>
+
         <div class="achievement-card">
+
           <div class="ach-icon">💼</div>
-          <div class="ach-metric">5<span>-Page</span></div>
-          <div class="ach-label">Executive BI Dashboard</div>
-          <div class="ach-desc">Designed multi-page Power BI dashboards (bank &amp; sales) with DAX measures, KPI cards,
-            and ML prediction pages for C-level decision makers.</div>
+
+          <div class="ach-metric">
+            5<span>-Page</span>
+          </div>
+
+          <div class="ach-label">
+            Executive BI Dashboard
+          </div>
+
+          <div class="ach-desc">
+
+            Designed multi-page Power BI dashboards
+            (bank &amp; sales) with DAX measures, KPI cards,
+            and ML prediction pages for C-level decision makers.
+
+          </div>
+
         </div>
+
         <div class="achievement-card">
+
           <div class="ach-icon">🏦</div>
-          <div class="ach-metric">11<span>.7%</span></div>
-          <div class="ach-label">Conversion Rate Tracked</div>
-          <div class="ach-desc">Identified key drivers of bank subscription conversion and built actionable segmentation
-            insights to improve campaign ROI.</div>
+
+          <div class="ach-metric">
+            11<span>.7%</span>
+          </div>
+
+          <div class="ach-label">
+            Conversion Rate Tracked
+          </div>
+
+          <div class="ach-desc">
+
+            Identified key drivers of bank subscription conversion
+            and built actionable segmentation insights to improve
+            campaign ROI.
+
+          </div>
+
         </div>
+
         <div class="achievement-card">
+
           <div class="ach-icon">💰</div>
-          <div class="ach-metric">22<span>M+</span></div>
-          <div class="ach-label">Revenue Analyzed</div>
-          <div class="ach-desc">Built Smart Sales Analytics dashboard tracking $22.86M+ in total sales, profit trends,
-            and top-performer rankings across multiple years.</div>
+
+          <div class="ach-metric">
+            22<span>M+</span>
+          </div>
+
+          <div class="ach-label">
+            Revenue Analyzed
+          </div>
+
+          <div class="ach-desc">
+
+            Built Smart Sales Analytics dashboard tracking
+            $22.86M+ in total sales, profit trends, and
+            top-performer rankings across multiple years.
+
+          </div>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
 
   <!-- =============================================
-     CERTIFICATES
-============================================= -->
+       CERTIFICATES
+  ============================================= -->
+
   <section id="certificates">
+
     <div class="container">
+
       <div class="reveal">
-        <div class="section-tag"><i class="fas fa-certificate"></i> Certifications</div>
-        <h2 class="section-title">Verified Expertise & Achievements</h2>
-        <p class="section-sub">A collection of professional certifications and training programs I've completed to
-          master the data ecosystem.</p>
+
+        <div class="section-tag">
+
+          <i class="fas fa-certificate"></i>
+          Certifications
+
+        </div>
+
+        <h2 class="section-title">
+          Verified Expertise &amp; Achievements
+        </h2>
+
+        <p class="section-sub">
+
+          A collection of professional certifications and training
+          programs I've completed to master the data ecosystem.
+
+        </p>
+
       </div>
 
       <div class="slider-wrapper reveal">
-        <button class="slider-btn prev" id="sliderPrev" aria-label="Previous">
+
+        <button
+          class="slider-btn prev"
+          id="sliderPrev"
+          aria-label="Previous">
+
           <i class="fas fa-chevron-left"></i>
+
         </button>
 
         <div class="slider-track-container">
+
           <div class="slider-track" id="sliderTrack">
-            <!-- Card 1: HCIA-AI -->
-            <a href="Ali Mousa Ali HCIA-AI (NTI).png" target="_blank" class="cert-card">
-              <div class="cert-img-wrap">
-                <img src="Ali Mousa Ali HCIA-AI (NTI).png" alt="HCIA-AI Professional Certification">
-              </div>
-              <div class="cert-body">
-                <div class="cert-content">
-                  <span class="cert-issuer">NTI / Huawei</span>
-                  <h3 class="cert-name">HCIA-AI Professional Certification</h3>
-                </div>
-                <div class="cert-view">View Full Certificate <i class="fas fa-external-link-alt"></i></div>
-              </div>
-            </a>
 
-            <!-- Card 2: AI NTI -->
-            <a href="AI NTI.png" target="_blank" class="cert-card">
-              <div class="cert-img-wrap">
-                <img src="AI NTI.png" alt="AI Training Certification">
-              </div>
-              <div class="cert-body">
-                <div class="cert-content">
-                  <span class="cert-issuer">NTI</span>
-                  <h3 class="cert-name">AI Training Certification</h3>
-                </div>
-                <div class="cert-view">View Full Certificate <i class="fas fa-external-link-alt"></i></div>
-              </div>
-            </a>
+            <!-- =============================================
+                 NEW CERTIFICATE
+            ============================================= -->
 
-            <!-- Card 3: AI Ethics -->
-            <a href="Ai Ethics (Datacamp).png" target="_blank" class="cert-card">
-              <div class="cert-img-wrap">
-                <img src="Ai Ethics (Datacamp).png" alt="AI Ethics Certificate">
-              </div>
-              <div class="cert-body">
-                <div class="cert-content">
-                  <span class="cert-issuer">DataCamp</span>
-                  <h3 class="cert-name">AI Ethics Certificate</h3>
-                </div>
-                <div class="cert-view">View Full Certificate <i class="fas fa-external-link-alt"></i></div>
-              </div>
-            </a>
-
-            <!-- Card 4: Intro to AI Agents -->
-            <a href="Intro to AI Agent (datacamp).png" target="_blank" class="cert-card">
-              <div class="cert-img-wrap">
-                <img src="Intro to AI Agent (datacamp).png" alt="Introduction to AI Agents">
-              </div>
-              <div class="cert-body">
-                <div class="cert-content">
-                  <span class="cert-issuer">DataCamp</span>
-                  <h3 class="cert-name">Introduction to AI Agents</h3>
-                </div>
-                <div class="cert-view">View Full Certificate <i class="fas fa-external-link-alt"></i></div>
-              </div>
-            </a>
-
-            <!-- Card 5: Understanding Data Science -->
-            <a href="understanding Data science (Datacamp).png" target="_blank" class="cert-card">
-              <div class="cert-img-wrap">
-                <img src="understanding Data science (Datacamp).png" alt="Understanding Data Science">
-              </div>
-              <div class="cert-body">
-                <div class="cert-content">
-                  <span class="cert-issuer">DataCamp</span>
-                  <h3 class="cert-name">Understanding Data Science</h3>
-                </div>
-                <div class="cert-view">View Full Certificate <i class="fas fa-external-link-alt"></i></div>
-              </div>
-            </a>
-
-            <!-- Card 6: Intro to SQL -->
-            <a href="intro to SQL (datacamp).png" target="_blank" class="cert-card">
-              <div class="cert-img-wrap">
-                <img src="intro to SQL (datacamp).png" alt="Intro to SQL">
-              </div>
-              <div class="cert-body">
-                <div class="cert-content">
-                  <span class="cert-issuer">DataCamp</span>
-                  <h3 class="cert-name">Intro to SQL</h3>
-                </div>
-                <div class="cert-view">View Full Certificate <i class="fas fa-external-link-alt"></i></div>
-              </div>
-            </a>
-
-            <!-- Card 7: SQL Associate Certification -->
-            <a href="SQL certificate.jpg" target="_blank" class="cert-card">
-              <div class="cert-img-wrap">
-                <img src="SQL certificate.jpg" alt="SQL Associate Certification">
-              </div>
-              <div class="cert-body">
-                <div class="cert-content">
-                  <span class="cert-issuer">Mind Luster</span>
-                  <h3 class="cert-name">SQL Associate Certification</h3>
-                </div>
-                <div class="cert-view">View Full Certificate <i class="fas fa-external-link-alt"></i></div>
-              </div>
-            </a>
-
-            <!-- Card 8: CIB Summer Internship -->
-            <a href="CIB Summer internship.png" target="_blank" class="cert-card">
-              <div class="cert-img-wrap">
-                <img src="CIB Summer internship.png" alt="Summer Internship Program">
-              </div>
-              <div class="cert-body">
-                <div class="cert-content">
-                  <span class="cert-issuer">CIB Bank</span>
-                  <h3 class="cert-name">Summer Internship Program</h3>
-                </div>
-                <div class="cert-view">View Full Certificate <i class="fas fa-external-link-alt"></i></div>
-              </div>
-            </a>
-
-            <!-- Card 9: Intro to AI and ML (Shabab) -->
-            <a href="intro to AI and ML (shabab mobtakeron).png" target="_blank" class="cert-card">
-              <div class="cert-img-wrap">
-                <img src="intro to AI and ML (shabab mobtakeron).png" alt="Intro to AI &amp; ML">
-              </div>
-              <div class="cert-body">
-                <div class="cert-content">
-                  <span class="cert-issuer">Shabab Mobtakeron</span>
-                  <h3 class="cert-name">Intro to AI &amp; ML</h3>
-                </div>
-                <div class="cert-view">View Full Certificate <i class="fas fa-external-link-alt"></i></div>
-              </div>
-            </a>
-
-            <!-- Card 10: Graduation Project -->
-            <a href="Graduation project intro to ai ,ml (Shabab mobtakeron ).png" target="_blank" class="cert-card">
-              <div class="cert-img-wrap">
-                <img src="Graduation project intro to ai ,ml (Shabab mobtakeron ).png"
-                  alt="Graduation Project: AI &amp; ML">
-              </div>
-              <div class="cert-body">
-                <div class="cert-content">
-                  <span class="cert-issuer">Shabab Mobtakeron</span>
-                  <h3 class="cert-name">Graduation Project: AI &amp; ML</h3>
-                </div>
-                <div class="cert-view">View Full Certificate <i class="fas fa-external-link-alt"></i></div>
-              </div>
-            </a>
-
-            <!-- Card 11: Intro to AI, ML & Quantum ML -->
-            <a href="Intro to Ai ,ML and Quantum ML Fundamentals (minister of youth and sports).jpg" target="_blank"
+            <a
+              href="Ali Mousa Ali orang.png"
+              target="_blank"
               class="cert-card">
+
               <div class="cert-img-wrap">
-                <img src="Intro to Ai ,ML and Quantum ML Fundamentals (minister of youth and sports).jpg"
-                  alt="AI, ML &amp; Quantum ML Fundamentals">
+
+                <img
+                  src="Ali Mousa Ali orang.png"
+                  alt="Ali Mousa Orange Certificate">
+
               </div>
+
               <div class="cert-body">
+
                 <div class="cert-content">
-                  <span class="cert-issuer">Minister of Youth and Sports</span>
-                  <h3 class="cert-name">AI, ML &amp; Quantum ML</h3>
+
+                  <span class="cert-issuer">
+                    Orange
+                  </span>
+
+                  <h3 class="cert-name">
+                    Orange Training Certificate
+                  </h3>
+
                 </div>
-                <div class="cert-view">View Full Certificate <i class="fas fa-external-link-alt"></i></div>
+
+                <div class="cert-view">
+
+                  View Full Certificate
+
+                  <i class="fas fa-external-link-alt"></i>
+
+                </div>
+
               </div>
+
             </a>
 
-            <!-- Card 12: Python Programming Basics -->
-            <a href="Python programming basics (mahara tech ITI).png" target="_blank" class="cert-card">
+            <!-- CARD 1 -->
+
+            <a
+              href="Ali Mousa Ali HCIA-AI (NTI).png"
+              target="_blank"
+              class="cert-card">
+
               <div class="cert-img-wrap">
-                <img src="Python programming basics (mahara tech ITI).png" alt="Python Programming Basics">
+
+                <img
+                  src="Ali Mousa Ali HCIA-AI (NTI).png"
+                  alt="HCIA-AI Professional Certification">
+
               </div>
+
               <div class="cert-body">
+
                 <div class="cert-content">
-                  <span class="cert-issuer">Mahara Tech / ITI</span>
-                  <h3 class="cert-name">Python Programming Basics</h3>
+
+                  <span class="cert-issuer">
+                    NTI / Huawei
+                  </span>
+
+                  <h3 class="cert-name">
+                    HCIA-AI Professional Certification
+                  </h3>
+
                 </div>
-                <div class="cert-view">View Full Certificate <i class="fas fa-external-link-alt"></i></div>
+
+                <div class="cert-view">
+                  View Full Certificate
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
+
               </div>
+
             </a>
 
-            <!-- Card 13: ML for Data Scientists -->
-            <a href="ML for Data scientists (Mahara tech ITI).png" target="_blank" class="cert-card">
+            <!-- CARD 2 -->
+
+            <a
+              href="AI NTI.png"
+              target="_blank"
+              class="cert-card">
+
               <div class="cert-img-wrap">
-                <img src="ML for Data scientists (Mahara tech ITI).png" alt="ML for Data Scientists">
+
+                <img
+                  src="AI NTI.png"
+                  alt="AI Training Certification">
+
               </div>
+
               <div class="cert-body">
+
                 <div class="cert-content">
-                  <span class="cert-issuer">Mahara Tech / ITI</span>
-                  <h3 class="cert-name">ML for Data Scientists</h3>
+
+                  <span class="cert-issuer">
+                    NTI
+                  </span>
+
+                  <h3 class="cert-name">
+                    AI Training Certification
+                  </h3>
+
                 </div>
-                <div class="cert-view">View Full Certificate <i class="fas fa-external-link-alt"></i></div>
+
+                <div class="cert-view">
+                  View Full Certificate
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
+
               </div>
+
             </a>
 
-            <!-- Card 14: Modern Gas Training -->
-            <a href="modern gas training.jfif" target="_blank" class="cert-card">
+            <!-- CARD 3 -->
+
+            <a
+              href="Ai Ethics (Datacamp).png"
+              target="_blank"
+              class="cert-card">
+
               <div class="cert-img-wrap">
-                <img src="modern gas training.jfif" alt="Field Training Certification">
+
+                <img
+                  src="Ai Ethics (Datacamp).png"
+                  alt="AI Ethics Certificate">
+
               </div>
+
               <div class="cert-body">
+
                 <div class="cert-content">
-                  <span class="cert-issuer">Modern Gas</span>
-                  <h3 class="cert-name">Field Training Certification</h3>
+
+                  <span class="cert-issuer">
+                    DataCamp
+                  </span>
+
+                  <h3 class="cert-name">
+                    AI Ethics Certificate
+                  </h3>
+
                 </div>
-                <div class="cert-view">View Full Certificate <i class="fas fa-external-link-alt"></i></div>
+
+                <div class="cert-view">
+                  View Full Certificate
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
+
               </div>
+
             </a>
 
-            <!-- Card 15: Responsible AI -->
-            <a href="responsible-innovation-and-trustworthy-ai.png" target="_blank" class="cert-card">
+            <!-- CARD 4 -->
+
+            <a
+              href="Intro to AI Agent (datacamp).png"
+              target="_blank"
+              class="cert-card">
+
               <div class="cert-img-wrap">
-                <img src="responsible-innovation-and-trustworthy-ai.png" alt="Responsible Innovation &amp; AI">
+
+                <img
+                  src="Intro to AI Agent (datacamp).png"
+                  alt="Introduction to AI Agents">
+
               </div>
+
               <div class="cert-body">
+
                 <div class="cert-content">
-                  <span class="cert-issuer">AI Governance</span>
-                  <h3 class="cert-name">Responsible Innovation &amp; AI</h3>
+
+                  <span class="cert-issuer">
+                    DataCamp
+                  </span>
+
+                  <h3 class="cert-name">
+                    Introduction to AI Agents
+                  </h3>
+
                 </div>
-                <div class="cert-view">View Full Certificate <i class="fas fa-external-link-alt"></i></div>
+
+                <div class="cert-view">
+                  View Full Certificate
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
+
               </div>
+
             </a>
+
+            <!-- CARD 5 -->
+
+            <a
+              href="understanding Data science (Datacamp).png"
+              target="_blank"
+              class="cert-card">
+
+              <div class="cert-img-wrap">
+
+                <img
+                  src="understanding Data science (Datacamp).png"
+                  alt="Understanding Data Science">
+
+              </div>
+
+              <div class="cert-body">
+
+                <div class="cert-content">
+
+                  <span class="cert-issuer">
+                    DataCamp
+                  </span>
+
+                  <h3 class="cert-name">
+                    Understanding Data Science
+                  </h3>
+
+                </div>
+
+                <div class="cert-view">
+                  View Full Certificate
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
+
+              </div>
+
+            </a>
+
+            <!-- CARD 6 -->
+
+            <a
+              href="intro to SQL (datacamp).png"
+              target="_blank"
+              class="cert-card">
+
+              <div class="cert-img-wrap">
+
+                <img
+                  src="intro to SQL (datacamp).png"
+                  alt="Intro to SQL">
+
+              </div>
+
+              <div class="cert-body">
+
+                <div class="cert-content">
+
+                  <span class="cert-issuer">
+                    DataCamp
+                  </span>
+
+                  <h3 class="cert-name">
+                    Intro to SQL
+                  </h3>
+
+                </div>
+
+                <div class="cert-view">
+                  View Full Certificate
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
+
+              </div>
+
+            </a>
+
+            <!-- CARD 7 -->
+
+            <a
+              href="SQL certificate.jpg"
+              target="_blank"
+              class="cert-card">
+
+              <div class="cert-img-wrap">
+
+                <img
+                  src="SQL certificate.jpg"
+                  alt="SQL Associate Certification">
+
+              </div>
+
+              <div class="cert-body">
+
+                <div class="cert-content">
+
+                  <span class="cert-issuer">
+                    Mind Luster
+                  </span>
+
+                  <h3 class="cert-name">
+                    SQL Associate Certification
+                  </h3>
+
+                </div>
+
+                <div class="cert-view">
+                  View Full Certificate
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
+
+              </div>
+
+            </a>
+
+            <!-- CARD 8 -->
+
+            <a
+              href="CIB Summer internship.png"
+              target="_blank"
+              class="cert-card">
+
+              <div class="cert-img-wrap">
+
+                <img
+                  src="CIB Summer internship.png"
+                  alt="Summer Internship Program">
+
+              </div>
+
+              <div class="cert-body">
+
+                <div class="cert-content">
+
+                  <span class="cert-issuer">
+                    CIB Bank
+                  </span>
+
+                  <h3 class="cert-name">
+                    Summer Internship Program
+                  </h3>
+
+                </div>
+
+                <div class="cert-view">
+                  View Full Certificate
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
+
+              </div>
+
+            </a>
+
+            <!-- CARD 9 -->
+
+            <a
+              href="intro to AI and ML (shabab mobtakeron).png"
+              target="_blank"
+              class="cert-card">
+
+              <div class="cert-img-wrap">
+
+                <img
+                  src="intro to AI and ML (shabab mobtakeron).png"
+                  alt="Intro to AI & ML">
+
+              </div>
+
+              <div class="cert-body">
+
+                <div class="cert-content">
+
+                  <span class="cert-issuer">
+                    Shabab Mobtakeron
+                  </span>
+
+                  <h3 class="cert-name">
+                    Intro to AI &amp; ML
+                  </h3>
+
+                </div>
+
+                <div class="cert-view">
+                  View Full Certificate
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
+
+              </div>
+
+            </a>
+
+            <!-- CARD 10 -->
+
+            <a
+              href="Graduation project intro to ai ,ml (Shabab mobtakeron ).png"
+              target="_blank"
+              class="cert-card">
+
+              <div class="cert-img-wrap">
+
+                <img
+                  src="Graduation project intro to ai ,ml (Shabab mobtakeron ).png"
+                  alt="Graduation Project: AI & ML">
+
+              </div>
+
+              <div class="cert-body">
+
+                <div class="cert-content">
+
+                  <span class="cert-issuer">
+                    Shabab Mobtakeron
+                  </span>
+
+                  <h3 class="cert-name">
+                    Graduation Project: AI &amp; ML
+                  </h3>
+
+                </div>
+
+                <div class="cert-view">
+                  View Full Certificate
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
+
+              </div>
+
+            </a>
+
+            <!-- CARD 11 -->
+
+            <a
+              href="Intro to Ai ,ML and Quantum ML Fundamentals (minister of youth and sports).jpg"
+              target="_blank"
+              class="cert-card">
+
+              <div class="cert-img-wrap">
+
+                <img
+                  src="Intro to Ai ,ML and Quantum ML Fundamentals (minister of youth and sports).jpg"
+                  alt="AI, ML & Quantum ML Fundamentals">
+
+              </div>
+
+              <div class="cert-body">
+
+                <div class="cert-content">
+
+                  <span class="cert-issuer">
+                    Minister of Youth and Sports
+                  </span>
+
+                  <h3 class="cert-name">
+                    AI, ML &amp; Quantum ML
+                  </h3>
+
+                </div>
+
+                <div class="cert-view">
+                  View Full Certificate
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
+
+              </div>
+
+            </a>
+
+            <!-- CARD 12 -->
+
+            <a
+              href="Python programming basics (mahara tech ITI).png"
+              target="_blank"
+              class="cert-card">
+
+              <div class="cert-img-wrap">
+
+                <img
+                  src="Python programming basics (mahara tech ITI).png"
+                  alt="Python Programming Basics">
+
+              </div>
+
+              <div class="cert-body">
+
+                <div class="cert-content">
+
+                  <span class="cert-issuer">
+                    Mahara Tech / ITI
+                  </span>
+
+                  <h3 class="cert-name">
+                    Python Programming Basics
+                  </h3>
+
+                </div>
+
+                <div class="cert-view">
+                  View Full Certificate
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
+
+              </div>
+
+            </a>
+
+            <!-- CARD 13 -->
+
+            <a
+              href="ML for Data scientists (Mahara tech ITI).png"
+              target="_blank"
+              class="cert-card">
+
+              <div class="cert-img-wrap">
+
+                <img
+                  src="ML for Data scientists (Mahara tech ITI).png"
+                  alt="ML for Data Scientists">
+
+              </div>
+
+              <div class="cert-body">
+
+                <div class="cert-content">
+
+                  <span class="cert-issuer">
+                    Mahara Tech / ITI
+                  </span>
+
+                  <h3 class="cert-name">
+                    ML for Data Scientists
+                  </h3>
+
+                </div>
+
+                <div class="cert-view">
+                  View Full Certificate
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
+
+              </div>
+
+            </a>
+
+            <!-- CARD 14 -->
+
+            <a
+              href="modern gas training.jfif"
+              target="_blank"
+              class="cert-card">
+
+              <div class="cert-img-wrap">
+
+                <img
+                  src="modern gas training.jfif"
+                  alt="Field Training Certification">
+
+              </div>
+
+              <div class="cert-body">
+
+                <div class="cert-content">
+
+                  <span class="cert-issuer">
+                    Modern Gas
+                  </span>
+
+                  <h3 class="cert-name">
+                    Field Training Certification
+                  </h3>
+
+                </div>
+
+                <div class="cert-view">
+                  View Full Certificate
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
+
+              </div>
+
+            </a>
+
+            <!-- CARD 15 -->
+
+            <a
+              href="responsible-innovation-and-trustworthy-ai.png"
+              target="_blank"
+              class="cert-card">
+
+              <div class="cert-img-wrap">
+
+                <img
+                  src="responsible-innovation-and-trustworthy-ai.png"
+                  alt="Responsible Innovation & AI">
+
+              </div>
+
+              <div class="cert-body">
+
+                <div class="cert-content">
+
+                  <span class="cert-issuer">
+                    AI Governance
+                  </span>
+
+                  <h3 class="cert-name">
+                    Responsible Innovation &amp; AI
+                  </h3>
+
+                </div>
+
+                <div class="cert-view">
+                  View Full Certificate
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
+
+              </div>
+
+            </a>
+
           </div>
+
         </div>
 
-        <button class="slider-btn next" id="sliderNext" aria-label="Next">
+        <button
+          class="slider-btn next"
+          id="sliderNext"
+          aria-label="Next">
+
           <i class="fas fa-chevron-right"></i>
+
         </button>
 
-        <div class="slider-dots" id="sliderDots"></div>
+        <div
+          class="slider-dots"
+          id="sliderDots">
+        </div>
+
       </div>
+
     </div>
+
   </section>
 
   <!-- =============================================
-     PROJECTS
-============================================= -->
+       PROJECTS
+  ============================================= -->
+
   <section id="projects">
+
     <div class="container">
+
       <div class="reveal">
-        <div class="section-tag"><i class="fas fa-folder-open"></i> Projects</div>
-        <h2 class="section-title">Featured Work</h2>
-        <p class="section-sub">End-to-end projects with real data, real models, and real results.</p>
+
+        <div class="section-tag">
+
+          <i class="fas fa-folder-open"></i>
+          Projects
+
+        </div>
+
+        <h2 class="section-title">
+          Featured Work
+        </h2>
+
+        <p class="section-sub">
+          End-to-end projects with real data, real models,
+          and real results.
+        </p>
+
       </div>
 
       <div class="projects-grid">
 
-        <!-- Project 1: Face Recognition -->
+        <!-- PROJECT 1 -->
+
         <div class="project-card reveal">
+
           <div class="project-img-wrap">
-            <span class="project-number">01</span>
-            <img src="Hospital Patient Identification & Logging System.png"
-              alt="Face Recognition System - Hospital Patient Identification" loading="lazy" />
+
+            <span class="project-number">
+              01
+            </span>
+
+            <img
+              src="Hospital Patient Identification & Logging System.png"
+              alt="Face Recognition System - Hospital Patient Identification"
+              loading="lazy" />
+
           </div>
+
           <div class="project-body">
-            <div class="project-cat">Computer Vision · Real-Time System</div>
-            <div class="project-title">Hospital Patient Face Recognition System</div>
-            <p class="project-desc">
-              A fully functional real-time patient identification and automated check-in system built for hospital
-              environments.
-              Captures live video, detects faces, matches against a registered patient database, and logs visits
-              automatically.
-            </p>
-            <div class="project-results">
-              <ul>
-                <li>Real-time face detection and recognition at 88%+ confidence (0.88 threshold)</li>
-                <li>Automated visit logging with timestamps to CSV + patient registry</li>
-                <li>Live surveillance mode with Start/Stop camera controls via GUI</li>
-                <li>Supports registration of unlimited patients with facial embedding storage</li>
-              </ul>
+
+            <div class="project-cat">
+              Computer Vision · Real-Time System
             </div>
+
+            <div class="project-title">
+              Hospital Patient Face Recognition System
+            </div>
+
+            <p class="project-desc">
+
+              A fully functional real-time patient identification
+              and automated check-in system built for hospital
+              environments. Captures live video, detects faces,
+              matches against a registered patient database,
+              and logs visits automatically.
+
+            </p>
+
+            <div class="project-results">
+
+              <ul>
+
+                <li>
+                  Real-time face detection and recognition
+                  at 88%+ confidence (0.88 threshold)
+                </li>
+
+                <li>
+                  Automated visit logging with timestamps
+                  to CSV + patient registry
+                </li>
+
+                <li>
+                  Live surveillance mode with Start/Stop
+                  camera controls via GUI
+                </li>
+
+                <li>
+                  Supports registration of unlimited patients
+                  with facial embedding storage
+                </li>
+
+              </ul>
+
+            </div>
+
             <div class="project-stack">
+
               <span class="stk">Python</span>
               <span class="stk">OpenCV</span>
               <span class="stk">face_recognition</span>
               <span class="stk">Tkinter</span>
               <span class="stk">Pickle</span>
               <span class="stk">CSV Logging</span>
+
             </div>
+
             <div class="project-links">
-              <a href="https://github.com/alimousaali/Hospital-Patient-Identification-Logging-System" target="_blank"
-                rel="noopener" class="link-gh" id="proj1-github">
-                <i class="fab fa-github"></i> View on GitHub
+
+              <a
+                href="https://github.com/alimousaali/Hospital-Patient-Identification-Logging-System"
+                target="_blank"
+                rel="noopener"
+                class="link-gh"
+                id="proj1-github">
+
+                <i class="fab fa-github"></i>
+                View on GitHub
+
               </a>
+
             </div>
+
           </div>
+
         </div>
 
-        <!-- Project 2: Bank Marketing -->
+        <!-- PROJECT 2 -->
+
         <div class="project-card reverse reveal">
+
           <div class="project-img-wrap">
-            <span class="project-number">02</span>
-            <img src="summary Bank Marketing Dashboard.png" alt="Bank Marketing Power BI Dashboard" loading="lazy" />
+
+            <span class="project-number">
+              02
+            </span>
+
+            <img
+              src="summary Bank Marketing Dashboard.png"
+              alt="Bank Marketing Power BI Dashboard"
+              loading="lazy" />
+
           </div>
+
           <div class="project-body">
-            <div class="project-cat">Machine Learning · Business Intelligence</div>
-            <div class="project-title">Bank Marketing Campaign Analysis &amp; ML Prediction</div>
-            <p class="project-desc">
-              End-to-end data project on the bank marketing dataset (45K+ records).
-              Covers full EDA, customer segmentation, risk profiling, and a classification model
-              wrapped in an executive Power BI dashboard with ML Predictions page.
-            </p>
-            <div class="project-results">
-              <ul>
-                <li>ML classification model achieving 89% accuracy on subscription prediction</li>
-                <li>Identified top conversion drivers: contact frequency, job type &amp; balance band</li>
-                <li>Built 5-page Power BI report: Home, Segmentation, Contact, Risk, ML Predictions</li>
-                <li>Tracked 11.70% overall conversion rate across 45K customers</li>
-              </ul>
+
+            <div class="project-cat">
+              Machine Learning · Business Intelligence
             </div>
+
+            <div class="project-title">
+              Bank Marketing Campaign Analysis &amp; ML Prediction
+            </div>
+
+            <p class="project-desc">
+
+              End-to-end data project on the bank marketing
+              dataset (45K+ records). Covers full EDA,
+              customer segmentation, risk profiling, and a
+              classification model wrapped in an executive
+              Power BI dashboard with ML Predictions page.
+
+            </p>
+
+            <div class="project-results">
+
+              <ul>
+
+                <li>
+                  ML classification model achieving 89%
+                  accuracy on subscription prediction
+                </li>
+
+                <li>
+                  Identified top conversion drivers:
+                  contact frequency, job type &amp; balance band
+                </li>
+
+                <li>
+                  Built 5-page Power BI report:
+                  Home, Segmentation, Contact, Risk, ML Predictions
+                </li>
+
+                <li>
+                  Tracked 11.70% overall conversion rate
+                  across 45K customers
+                </li>
+
+              </ul>
+
+            </div>
+
             <div class="project-stack">
+
               <span class="stk">Python</span>
               <span class="stk">Scikit-learn</span>
               <span class="stk">Pandas</span>
@@ -2352,443 +3323,1154 @@
               <span class="stk">DAX</span>
               <span class="stk">Jupyter Notebook</span>
               <span class="stk">Matplotlib</span>
+
             </div>
+
             <div class="project-links">
-              <a href="https://github.com/alimousaali/Bank-Marketing-Analytics" target="_blank" rel="noopener"
-                class="link-gh" id="proj2-github">
-                <i class="fab fa-github"></i> View on GitHub
+
+              <a
+                href="https://github.com/alimousaali/Bank-Marketing-Analytics"
+                target="_blank"
+                rel="noopener"
+                class="link-gh"
+                id="proj2-github">
+
+                <i class="fab fa-github"></i>
+                View on GitHub
+
               </a>
+
             </div>
+
           </div>
+
         </div>
 
-        <!-- Project 3: Sales Dashboard -->
+        <!-- PROJECT 3 -->
+
         <div class="project-card reveal">
+
           <div class="project-img-wrap">
-            <span class="project-number">03</span>
-            <img src="main Smart Sales Analytics & Business Insights.png" alt="Smart Sales Analytics Power BI Dashboard"
+
+            <span class="project-number">
+              03
+            </span>
+
+            <img
+              src="main Smart Sales Analytics & Business Insights.png"
+              alt="Smart Sales Analytics Power BI Dashboard"
               loading="lazy" />
+
           </div>
+
           <div class="project-body">
-            <div class="project-cat">Business Intelligence · Analytics Dashboard</div>
-            <div class="project-title">Smart Sales Analytics &amp; Business Insights Dashboard</div>
-            <p class="project-desc">
-              A comprehensive multi-year sales analytics solution built in Power BI, tracking profit,
-              revenue, orders, and return-on-sales across brands and geographies. Features AI Analysis
-              and Detailed drill-through views for executive decision-making.
-            </p>
-            <div class="project-results">
-              <ul>
-                <li>Analyzed $22.86M+ total sales across multiple years (2013–2016)</li>
-                <li>Tracked Return on Sales (ROS) at 43.4% with month-over-month trend analysis</li>
-                <li>Top 5 salesperson ranking with individual revenue attribution</li>
-                <li>Interactive filters: year, month, brand, and geographic map drill-through</li>
-              </ul>
+
+            <div class="project-cat">
+              Business Intelligence · Analytics Dashboard
             </div>
+
+            <div class="project-title">
+              Smart Sales Analytics &amp; Business Insights Dashboard
+            </div>
+
+            <p class="project-desc">
+
+              A comprehensive multi-year sales analytics solution
+              built in Power BI, tracking profit, revenue, orders,
+              and return-on-sales across brands and geographies.
+              Features AI Analysis and Detailed drill-through
+              views for executive decision-making.
+
+            </p>
+
+            <div class="project-results">
+
+              <ul>
+
+                <li>
+                  Analyzed $22.86M+ total sales across
+                  multiple years (2013–2016)
+                </li>
+
+                <li>
+                  Tracked Return on Sales (ROS) at 43.4%
+                  with month-over-month trend analysis
+                </li>
+
+                <li>
+                  Top 5 salesperson ranking with individual
+                  revenue attribution
+                </li>
+
+                <li>
+                  Interactive filters: year, month, brand,
+                  and geographic map drill-through
+                </li>
+
+              </ul>
+
+            </div>
+
             <div class="project-stack">
+
               <span class="stk">Power BI</span>
               <span class="stk">DAX</span>
               <span class="stk">Data Modeling</span>
               <span class="stk">KPI Cards</span>
               <span class="stk">Bing Maps</span>
               <span class="stk">Time Intelligence</span>
+
             </div>
+
             <div class="project-links">
-              <a href="https://github.com/alimousaali/Smart-Sales-Analytics-Business-Insights" target="_blank"
-                rel="noopener" class="link-gh" id="proj3-github">
-                <i class="fab fa-github"></i> View on GitHub
+
+              <a
+                href="https://github.com/alimousaali/Smart-Sales-Analytics-Business-Insights"
+                target="_blank"
+                rel="noopener"
+                class="link-gh"
+                id="proj3-github">
+
+                <i class="fab fa-github"></i>
+                View on GitHub
+
               </a>
+
             </div>
+
           </div>
+
         </div>
 
       </div>
+
     </div>
+
   </section>
 
   <!-- =============================================
-     CURRENTLY LEARNING
-============================================= -->
+       CURRENTLY LEARNING
+  ============================================= -->
+
   <section id="learning">
+
     <div class="container">
+
       <div class="reveal">
-        <div class="section-tag"><i class="fas fa-graduation-cap"></i> Currently Learning</div>
-        <h2 class="section-title">Always Growing</h2>
-        <p class="section-sub">The skills I'm actively developing to stay ahead in a fast-moving field.</p>
+
+        <div class="section-tag">
+
+          <i class="fas fa-graduation-cap"></i>
+          Currently Learning
+
+        </div>
+
+        <h2 class="section-title">
+          Always Growing
+        </h2>
+
+        <p class="section-sub">
+
+          The skills I'm actively developing to stay ahead
+          in a fast-moving field.
+
+        </p>
+
       </div>
+
       <div class="learning-grid reveal">
+
         <div class="learning-card">
-          <div class="lc-icon">🗄️</div>
-          <div class="lc-title">Advanced SQL</div>
-          <div class="lc-sub">Window functions, CTEs, query optimization, and complex joins for large-scale analytical
-            databases.</div>
-          <div class="lc-progress-wrap">
-            <div class="lc-progress">
-              <div class="lc-progress-fill" style="width:65%"></div>
-            </div>
-            <span class="lc-pct">65%</span>
+
+          <div class="lc-icon">
+            🗄️
           </div>
+
+          <div class="lc-title">
+            Advanced SQL
+          </div>
+
+          <div class="lc-sub">
+
+            Window functions, CTEs, query optimization,
+            and complex joins for large-scale analytical
+            databases.
+
+          </div>
+
         </div>
+
         <div class="learning-card">
-          <div class="lc-icon">📊</div>
-          <div class="lc-title">Power BI (DAX)</div>
-          <div class="lc-sub">Advanced DAX measures, time intelligence functions, calculation groups, and performance
-            optimization.</div>
-          <div class="lc-progress-wrap">
-            <div class="lc-progress">
-              <div class="lc-progress-fill" style="width:58%"></div>
-            </div>
-            <span class="lc-pct">58%</span>
+
+          <div class="lc-icon">
+            📊
           </div>
+
+          <div class="lc-title">
+            Power BI (DAX)
+          </div>
+
+          <div class="lc-sub">
+
+            Advanced DAX measures, time intelligence functions,
+            calculation groups, and performance optimization.
+
+          </div>
+
         </div>
+
         <div class="learning-card">
-          <div class="lc-icon">🚀</div>
-          <div class="lc-title">ML Deployment</div>
-          <div class="lc-sub">Serving ML models as REST APIs using FastAPI and Flask, containerization with Docker, and
-            cloud deployment.</div>
-          <div class="lc-progress-wrap">
-            <div class="lc-progress">
-              <div class="lc-progress-fill" style="width:42%"></div>
-            </div>
-            <span class="lc-pct">42%</span>
+
+          <div class="lc-icon">
+            🚀
           </div>
+
+          <div class="lc-title">
+            ML Deployment
+          </div>
+
+          <div class="lc-sub">
+
+            Serving ML models as REST APIs using FastAPI
+            and Flask, containerization with Docker,
+            and cloud deployment.
+
+          </div>
+
         </div>
+
         <div class="learning-card">
-          <div class="lc-icon">🧠</div>
-          <div class="lc-title">Deep Learning</div>
-          <div class="lc-sub">Neural networks, CNNs, and transfer learning with TensorFlow/Keras for advanced computer
-            vision tasks.</div>
-          <div class="lc-progress-wrap">
-            <div class="lc-progress">
-              <div class="lc-progress-fill" style="width:35%"></div>
-            </div>
-            <span class="lc-pct">35%</span>
+
+          <div class="lc-icon">
+            🧠
           </div>
+
+          <div class="lc-title">
+            Deep Learning
+          </div>
+
+          <div class="lc-sub">
+
+            Neural networks, CNNs, and transfer learning
+            with TensorFlow/Keras for advanced computer
+            vision tasks.
+
+          </div>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
 
   <!-- =============================================
-     CONTACT
-============================================= -->
+       CONTACT
+  ============================================= -->
+
   <section id="contact">
+
     <div class="container">
+
       <div class="reveal">
-        <div class="section-tag"><i class="fas fa-envelope"></i> Contact</div>
-        <h2 class="section-title">Let's Build Something Together</h2>
-      </div>
-      <div class="contact-wrapper reveal">
-        <div class="contact-info">
-          <p class="contact-cta">
-            I'm <strong>actively looking for opportunities</strong> in Data Analytics, Business Intelligence,
-            and Machine Learning. If you're hiring or have a project that needs data-driven thinking —
-            <strong>let's talk.</strong>
-          </p>
-          <div class="contact-links">
-            <a href="mailto:ali.mousa152004@gmail.com" class="contact-link" id="contact-email">
-              <div class="cl-icon"><i class="fas fa-envelope"></i></div>
-              <div>
-                <div class="cl-label">Email</div>
-                <div class="cl-val">ali.mousa152004@gmail.com</div>
-              </div>
-            </a>
-            <a href="https://linkedin.com/in/ali-mousa" target="_blank" rel="noopener" class="contact-link"
-              id="contact-linkedin">
-              <div class="cl-icon"><i class="fab fa-linkedin-in"></i></div>
-              <div>
-                <div class="cl-label">LinkedIn</div>
-                <div class="cl-val">linkedin.com/in/ali-mousa</div>
-              </div>
-            </a>
-            <a href="https://github.com/alimousaali" target="_blank" rel="noopener" class="contact-link"
-              id="contact-github">
-              <div class="cl-icon"><i class="fab fa-github"></i></div>
-              <div>
-                <div class="cl-label">GitHub</div>
-                <div class="cl-val">github.com/alimousaali</div>
-              </div>
-            </a>
-            <a href="Ali_Mousa_Ali_Resume.pdf" download class="contact-link" id="contact-cv">
-              <div class="cl-icon"><i class="fas fa-file-pdf"></i></div>
-              <div>
-                <div class="cl-label">Resume / CV</div>
-                <div class="cl-val">Download PDF — Ali Mousa CV</div>
-              </div>
-            </a>
-          </div>
+
+        <div class="section-tag">
+
+          <i class="fas fa-envelope"></i>
+          Contact
+
         </div>
+
+        <h2 class="section-title">
+          Let's Build Something Together
+        </h2>
+
+      </div>
+
+      <div class="contact-wrapper reveal">
+
+        <div class="contact-info">
+
+          <p class="contact-cta">
+
+            I'm <strong>actively looking for opportunities</strong>
+            in Data Analytics, Business Intelligence, and Machine Learning.
+            If you're hiring or have a project that needs data-driven
+            thinking — <strong>let's talk.</strong>
+
+          </p>
+
+          <div class="contact-links">
+
+            <a
+              href="mailto:ali.mousa152004@gmail.com"
+              class="contact-link"
+              id="contact-email">
+
+              <div class="cl-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+
+              <div>
+
+                <div class="cl-label">
+                  Email
+                </div>
+
+                <div class="cl-val">
+                  ali.mousa152004@gmail.com
+                </div>
+
+              </div>
+
+            </a>
+
+            <a
+              href="https://linkedin.com/in/ali-mousa"
+              target="_blank"
+              rel="noopener"
+              class="contact-link"
+              id="contact-linkedin">
+
+              <div class="cl-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+
+              <div>
+
+                <div class="cl-label">
+                  LinkedIn
+                </div>
+
+                <div class="cl-val">
+                  linkedin.com/in/ali-mousa
+                </div>
+
+              </div>
+
+            </a>
+
+            <a
+              href="https://github.com/alimousaali"
+              target="_blank"
+              rel="noopener"
+              class="contact-link"
+              id="contact-github">
+
+              <div class="cl-icon">
+                <i class="fab fa-github"></i>
+              </div>
+
+              <div>
+
+                <div class="cl-label">
+                  GitHub
+                </div>
+
+                <div class="cl-val">
+                  github.com/alimousaali
+                </div>
+
+              </div>
+
+            </a>
+
+            <a
+              href="Ali_Mousa_Ali_Resume.pdf"
+              download
+              class="contact-link"
+              id="contact-cv">
+
+              <div class="cl-icon">
+                <i class="fas fa-file-pdf"></i>
+              </div>
+
+              <div>
+
+                <div class="cl-label">
+                  Resume / CV
+                </div>
+
+                <div class="cl-val">
+                  Download PDF — Ali Mousa CV
+                </div>
+
+              </div>
+
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- CONTACT FORM -->
 
         <div class="contact-form-card">
+
           <form id="contactForm" novalidate>
+
             <div class="form-group">
-              <label for="cf-name">Your Name</label>
-              <input type="text" id="cf-name" placeholder="e.g. Sarah Ahmed" required />
+
+              <label for="cf-name">
+                Your Name
+              </label>
+
+              <input
+                type="text"
+                id="cf-name"
+                placeholder="e.g. Sarah Ahmed"
+                required />
+
             </div>
+
             <div class="form-group">
-              <label for="cf-email">Email Address</label>
-              <input type="email" id="cf-email" placeholder="sarah@company.com" required />
+
+              <label for="cf-email">
+                Email Address
+              </label>
+
+              <input
+                type="email"
+                id="cf-email"
+                placeholder="sarah@company.com"
+                required />
+
             </div>
+
             <div class="form-group">
-              <label for="cf-subject">Subject</label>
-              <input type="text" id="cf-subject" placeholder="Job opportunity / Collaboration / Freelance" />
+
+              <label for="cf-subject">
+                Subject
+              </label>
+
+              <input
+                type="text"
+                id="cf-subject"
+                placeholder="Job opportunity / Collaboration / Freelance" />
+
             </div>
+
             <div class="form-group">
-              <label for="cf-msg">Message</label>
-              <textarea id="cf-msg" placeholder="Tell me about the role or project…" required></textarea>
+
+              <label for="cf-msg">
+                Message
+              </label>
+
+              <textarea
+                id="cf-msg"
+                placeholder="Tell me about the role or project…"
+                required></textarea>
+
             </div>
-            <button type="submit" class="form-submit" id="form-submit-btn">
-              <i class="fas fa-paper-plane"></i> Send Message
+
+            <button
+              type="submit"
+              class="form-submit"
+              id="form-submit-btn">
+
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+
             </button>
+
           </form>
-          <div class="form-success" id="formSuccess">
-            ✅ Message sent! I'll get back to you within 24 hours.
+
+          <div
+            class="form-success"
+            id="formSuccess">
+
+            ✅ Message sent!
+            I'll get back to you within 24 hours.
+
           </div>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
 
   <!-- =============================================
-     FOOTER
-============================================= -->
+       FOOTER
+  ============================================= -->
+
   <footer>
+
     <div class="footer-inner">
+
       <div class="footer-copy">
-        © 2025 <span>Ali Mousa</span> · Data Analyst &amp; Junior Data Scientist · Built with precision &amp; purpose.
+
+        © 2025
+        <span>Ali Mousa</span>
+        · Data Analyst &amp; Junior Data Scientist
+        · Built with precision &amp; purpose.
+
       </div>
+
       <div class="footer-socials">
-        <a href="https://github.com/AliMousa" target="_blank" rel="noopener" class="footer-social" aria-label="GitHub">
+
+        <a
+          href="https://github.com/alimousaali"
+          target="_blank"
+          rel="noopener"
+          class="footer-social"
+          aria-label="GitHub">
+
           <i class="fab fa-github"></i>
+
         </a>
-        <a href="https://linkedin.com/in/ali-mousa" target="_blank" rel="noopener" class="footer-social"
+
+        <a
+          href="https://linkedin.com/in/ali-mousa"
+          target="_blank"
+          rel="noopener"
+          class="footer-social"
           aria-label="LinkedIn">
+
           <i class="fab fa-linkedin-in"></i>
+
         </a>
-        <a href="mailto:ali.mousa@email.com" class="footer-social" aria-label="Email">
+
+        <a
+          href="mailto:ali.mousa152004@gmail.com"
+          class="footer-social"
+          aria-label="Email">
+
           <i class="fas fa-envelope"></i>
+
         </a>
+
       </div>
+
     </div>
+
   </footer>
 
   <!-- =============================================
-     JAVASCRIPT
-============================================= -->
+       JAVASCRIPT
+  ============================================= -->
+
   <script>
-    /* ---- Navbar scroll effect ---- */
+
+    /* =============================================
+       NAVBAR SCROLL EFFECT
+    ============================================= */
+
     const navbar = document.getElementById('navbar');
+
     window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 40);
-    }, { passive: true });
 
-    /* ---- Mobile hamburger ---- */
-    const hamburger = document.getElementById('hamburger');
-    const navMobile = document.getElementById('navMobile');
-    let mobileOpen = false;
-    hamburger.addEventListener('click', () => {
-      mobileOpen = !mobileOpen;
-      navMobile.style.display = mobileOpen ? 'flex' : 'none';
-      const spans = hamburger.querySelectorAll('span');
-      if (mobileOpen) {
-        spans[0].style.transform = 'translateY(7px) rotate(45deg)';
-        spans[1].style.opacity = '0';
-        spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
-      } else {
-        spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
-      }
-    });
-    navMobile.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-      mobileOpen = false;
-      navMobile.style.display = 'none';
-      hamburger.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
-    }));
-
-    /* ---- Scroll-reveal ---- */
-    const reveals = document.querySelectorAll('.reveal');
-    const revealObs = new IntersectionObserver((entries) => {
-      entries.forEach((e, i) => {
-        if (e.isIntersecting) {
-          setTimeout(() => e.target.classList.add('visible'), i * 80);
-          revealObs.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    reveals.forEach(el => revealObs.observe(el));
-
-    /* ---- Skill bar animation ---- */
-    const skillFills = document.querySelectorAll('.skill-fill');
-    const skillObs = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.style.width = e.target.dataset.width + '%';
-          skillObs.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.3 });
-    skillFills.forEach(el => skillObs.observe(el));
-
-    /* ---- Active nav link ---- */
-    const sections = document.querySelectorAll('section[id]');
-    const navLinkIds = {
-      about: 'nav-about', skills: 'nav-skills', achievements: 'nav-ach', certificates: 'nav-certs',
-      projects: 'nav-projects', learning: 'nav-learning', contact: 'nav-contact'
-    };
-    const navObs = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          Object.values(navLinkIds).forEach(id => {
-            const el = document.getElementById(id);
-            if (el) el.classList.remove('active');
-          });
-          const linkId = navLinkIds[e.target.id];
-          if (linkId) {
-            const el = document.getElementById(linkId);
-            if (el) el.classList.add('active');
-          }
-        }
-      });
-    }, { threshold: 0.4 });
-    sections.forEach(s => navObs.observe(s));
-
-    /* ---- Contact form (sends via mailto or Formspree) ---- */
-    document.getElementById('contactForm').addEventListener('submit', function (e) {
-      e.preventDefault();
-      const name = document.getElementById('cf-name').value.trim();
-      const email = document.getElementById('cf-email').value.trim();
-      const subject = document.getElementById('cf-subject').value.trim() || 'Portfolio Contact';
-      const msg = document.getElementById('cf-msg').value.trim();
-
-      if (!name || !email || !msg) {
-        alert('Please fill in all required fields.');
-        return;
-      }
-
-      const btn = document.getElementById('form-submit-btn');
-      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending…';
-      btn.disabled = true;
-
-      // Option 1: Mailto (Opens user's email client)
-      const mailTo = 'ali.mousa152004@gmail.com';
-      const mailSubject = encodeURIComponent(subject + ' — from ' + name);
-      const mailBody = encodeURIComponent(
-        'Name: ' + name + '\n' +
-        'Email: ' + email + '\n' +
-        'Subject: ' + subject + '\n\n' +
-        'Message:\n' + msg
+      navbar.classList.toggle(
+        'scrolled',
+        window.scrollY > 40
       );
 
-      // Open email client
-      window.location.href = 'mailto:' + mailTo + '?subject=' + mailSubject + '&body=' + mailBody;
+    }, { passive: true });
 
-      // Show success message on the site
-      setTimeout(() => {
-        document.getElementById('contactForm').style.display = 'none';
-        document.getElementById('formSuccess').style.display = 'block';
-        btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
-        btn.disabled = false;
-      }, 1500);
+
+    /* =============================================
+       MOBILE HAMBURGER
+    ============================================= */
+
+    const hamburger =
+      document.getElementById('hamburger');
+
+    const navMobile =
+      document.getElementById('navMobile');
+
+    let mobileOpen = false;
+
+    hamburger.addEventListener('click', () => {
+
+      mobileOpen = !mobileOpen;
+
+      navMobile.style.display =
+        mobileOpen ? 'flex' : 'none';
+
+      const spans =
+        hamburger.querySelectorAll('span');
+
+      if (mobileOpen) {
+
+        spans[0].style.transform =
+          'translateY(7px) rotate(45deg)';
+
+        spans[1].style.opacity = '0';
+
+        spans[2].style.transform =
+          'translateY(-7px) rotate(-45deg)';
+
+      } else {
+
+        spans.forEach(s => {
+
+          s.style.transform = '';
+          s.style.opacity = '';
+
+        });
+
+      }
+
     });
 
-    /* ---- Animate hero stats count-up ---- */
-    function countUp(el, target, suffix, duration = 1800) {
-      let start = 0;
-      const step = target / (duration / 16);
-      const timer = setInterval(() => {
-        start += step;
-        if (start >= target) { start = target; clearInterval(timer); }
-        el.querySelector('.hero-stat-num').innerHTML = Math.floor(start) + '<span>' + suffix + '</span>';
-      }, 16);
-    }
-    const statEls = document.querySelectorAll('.hero-stat');
-    const statData = [
-      { target: 3, suffix: '+' },
-      { target: 88, suffix: '%' },
-      { target: 2, suffix: '+' }
-    ];
-    const heroObs = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          statEls.forEach((el, i) => countUp(el, statData[i].target, statData[i].suffix));
-          heroObs.disconnect();
-        }
-      });
-    }, { threshold: 0.3 });
-    if (statEls.length) heroObs.observe(statEls[0]);
+    navMobile
+      .querySelectorAll('a')
+      .forEach(a => {
 
-    /* ---- Certificates Slider Logic ---- */
-    const track = document.getElementById('sliderTrack');
-    const prevBtn = document.getElementById('sliderPrev');
-    const nextBtn = document.getElementById('sliderNext');
-    const dotsContainer = document.getElementById('sliderDots');
-    const cards = Array.from(track.children);
+        a.addEventListener('click', () => {
+
+          mobileOpen = false;
+
+          navMobile.style.display = 'none';
+
+          hamburger
+            .querySelectorAll('span')
+            .forEach(s => {
+
+              s.style.transform = '';
+              s.style.opacity = '';
+
+            });
+
+        });
+
+      });
+
+
+    /* =============================================
+       SCROLL REVEAL
+    ============================================= */
+
+    const reveals =
+      document.querySelectorAll('.reveal');
+
+    const revealObs =
+      new IntersectionObserver((entries) => {
+
+        entries.forEach((e, i) => {
+
+          if (e.isIntersecting) {
+
+            setTimeout(() => {
+
+              e.target.classList.add('visible');
+
+            }, i * 80);
+
+            revealObs.unobserve(e.target);
+
+          }
+
+        });
+
+      }, {
+        threshold: 0.12
+      });
+
+    reveals.forEach(el =>
+      revealObs.observe(el)
+    );
+
+
+    /* =============================================
+       ACTIVE NAV LINK
+    ============================================= */
+
+    const sections =
+      document.querySelectorAll('section[id]');
+
+    const navLinkIds = {
+
+      about: 'nav-about',
+      skills: 'nav-skills',
+      achievements: 'nav-ach',
+      certificates: 'nav-certs',
+      projects: 'nav-projects',
+      learning: 'nav-learning',
+      contact: 'nav-contact'
+
+    };
+
+    const navObs =
+      new IntersectionObserver((entries) => {
+
+        entries.forEach(e => {
+
+          if (e.isIntersecting) {
+
+            Object.values(navLinkIds)
+              .forEach(id => {
+
+                const el =
+                  document.getElementById(id);
+
+                if (el) {
+                  el.classList.remove('active');
+                }
+
+              });
+
+            const linkId =
+              navLinkIds[e.target.id];
+
+            if (linkId) {
+
+              const el =
+                document.getElementById(linkId);
+
+              if (el) {
+                el.classList.add('active');
+              }
+
+            }
+
+          }
+
+        });
+
+      }, {
+        threshold: 0.4
+      });
+
+    sections.forEach(s =>
+      navObs.observe(s)
+    );
+
+
+    /* =============================================
+       CONTACT FORM
+    ============================================= */
+
+    document
+      .getElementById('contactForm')
+      .addEventListener('submit', function (e) {
+
+        e.preventDefault();
+
+        const name =
+          document.getElementById('cf-name')
+            .value.trim();
+
+        const email =
+          document.getElementById('cf-email')
+            .value.trim();
+
+        const subject =
+          document.getElementById('cf-subject')
+            .value.trim() ||
+          'Portfolio Contact';
+
+        const msg =
+          document.getElementById('cf-msg')
+            .value.trim();
+
+        if (!name || !email || !msg) {
+
+          alert(
+            'Please fill in all required fields.'
+          );
+
+          return;
+        }
+
+        const btn =
+          document.getElementById(
+            'form-submit-btn'
+          );
+
+        btn.innerHTML =
+          '<i class="fas fa-spinner fa-spin"></i> Sending…';
+
+        btn.disabled = true;
+
+        const mailTo =
+          'ali.mousa152004@gmail.com';
+
+        const mailSubject =
+          encodeURIComponent(
+            subject + ' — from ' + name
+          );
+
+        const mailBody =
+          encodeURIComponent(
+
+            'Name: ' + name + '\n' +
+            'Email: ' + email + '\n' +
+            'Subject: ' + subject + '\n\n' +
+            'Message:\n' + msg
+
+          );
+
+        window.location.href =
+          'mailto:' +
+          mailTo +
+          '?subject=' +
+          mailSubject +
+          '&body=' +
+          mailBody;
+
+        setTimeout(() => {
+
+          document
+            .getElementById('contactForm')
+            .style.display = 'none';
+
+          document
+            .getElementById('formSuccess')
+            .style.display = 'block';
+
+          btn.innerHTML =
+            '<i class="fas fa-paper-plane"></i> Send Message';
+
+          btn.disabled = false;
+
+        }, 1500);
+
+      });
+
+
+    /* =============================================
+       HERO STATS COUNT-UP
+    ============================================= */
+
+    function countUp(
+      el,
+      target,
+      suffix,
+      duration = 1800
+    ) {
+
+      let start = 0;
+
+      const step =
+        target / (duration / 16);
+
+      const timer =
+        setInterval(() => {
+
+          start += step;
+
+          if (start >= target) {
+
+            start = target;
+
+            clearInterval(timer);
+
+          }
+
+          el.querySelector(
+            '.hero-stat-num'
+          ).innerHTML =
+            Math.floor(start) +
+            '<span>' +
+            suffix +
+            '</span>';
+
+        }, 16);
+
+    }
+
+    const statEls =
+      document.querySelectorAll(
+        '.hero-stat'
+      );
+
+    const statData = [
+
+      {
+        target: 3,
+        suffix: '+'
+      },
+
+      {
+        target: 88,
+        suffix: '%'
+      },
+
+      {
+        target: 2,
+        suffix: '+'
+      }
+
+    ];
+
+    const heroObs =
+      new IntersectionObserver((entries) => {
+
+        entries.forEach(e => {
+
+          if (e.isIntersecting) {
+
+            statEls.forEach((el, i) => {
+
+              countUp(
+                el,
+                statData[i].target,
+                statData[i].suffix
+              );
+
+            });
+
+            heroObs.disconnect();
+
+          }
+
+        });
+
+      }, {
+        threshold: 0.3
+      });
+
+    if (statEls.length) {
+      heroObs.observe(statEls[0]);
+    }
+
+
+    /* =============================================
+       CERTIFICATES SLIDER
+    ============================================= */
+
+    const track =
+      document.getElementById(
+        'sliderTrack'
+      );
+
+    const prevBtn =
+      document.getElementById(
+        'sliderPrev'
+      );
+
+    const nextBtn =
+      document.getElementById(
+        'sliderNext'
+      );
+
+    const dotsContainer =
+      document.getElementById(
+        'sliderDots'
+      );
+
+    const cards =
+      track
+        ? Array.from(track.children)
+        : [];
 
     let currentIndex = 0;
 
     if (track && cards.length > 0) {
-      // Create dots
+
+      /* CREATE DOTS */
+
       cards.forEach((_, i) => {
-        const dot = document.createElement('div');
+
+        const dot =
+          document.createElement('div');
+
         dot.classList.add('dot');
-        if (i === 0) dot.classList.add('active');
-        dot.addEventListener('click', () => goToSlide(i));
+
+        if (i === 0) {
+          dot.classList.add('active');
+        }
+
+        dot.addEventListener(
+          'click',
+          () => goToSlide(i)
+        );
+
         dotsContainer.appendChild(dot);
+
       });
 
-      const dots = Array.from(dotsContainer.children);
+      const dots =
+        Array.from(
+          dotsContainer.children
+        );
+
+
+      /* UPDATE SLIDER */
 
       function updateSlider() {
-        const cardWidth = cards[0].offsetWidth + 24; // width + gap
-        track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+
+        const cardWidth =
+          cards[0].offsetWidth + 24;
+
+        track.style.transform =
+          `translateX(-${currentIndex * cardWidth}px)`;
 
         dots.forEach((dot, i) => {
-          dot.classList.toggle('active', i === currentIndex);
+
+          dot.classList.toggle(
+            'active',
+            i === currentIndex
+          );
+
         });
 
-        // Disable buttons at ends
-        prevBtn.style.opacity = currentIndex === 0 ? '0.3' : '1';
-        prevBtn.style.pointerEvents = currentIndex === 0 ? 'none' : 'auto';
+        prevBtn.style.opacity =
+          currentIndex === 0
+            ? '0.3'
+            : '1';
 
-        const containerWidth = track.parentElement.offsetWidth;
-        const visibleCards = Math.floor(containerWidth / cardWidth) || 1;
-        const maxIndex = Math.max(0, cards.length - visibleCards);
+        prevBtn.style.pointerEvents =
+          currentIndex === 0
+            ? 'none'
+            : 'auto';
 
-        if (currentIndex > maxIndex) currentIndex = maxIndex;
+        const containerWidth =
+          track.parentElement.offsetWidth;
 
-        nextBtn.style.opacity = currentIndex >= maxIndex ? '0.3' : '1';
-        nextBtn.style.pointerEvents = currentIndex >= maxIndex ? 'none' : 'auto';
+        const visibleCards =
+          Math.floor(
+            containerWidth / cardWidth
+          ) || 1;
+
+        const maxIndex =
+          Math.max(
+            0,
+            cards.length - visibleCards
+          );
+
+        if (currentIndex > maxIndex) {
+          currentIndex = maxIndex;
+        }
+
+        nextBtn.style.opacity =
+          currentIndex >= maxIndex
+            ? '0.3'
+            : '1';
+
+        nextBtn.style.pointerEvents =
+          currentIndex >= maxIndex
+            ? 'none'
+            : 'auto';
+
       }
+
+
+      /* GO TO SLIDE */
 
       function goToSlide(index) {
-        const cardWidth = cards[0].offsetWidth + 24;
-        const containerWidth = track.parentElement.offsetWidth;
-        const visibleCards = Math.floor(containerWidth / cardWidth) || 1;
-        const maxIndex = Math.max(0, cards.length - visibleCards);
 
-        currentIndex = Math.min(Math.max(index, 0), maxIndex);
+        const cardWidth =
+          cards[0].offsetWidth + 24;
+
+        const containerWidth =
+          track.parentElement.offsetWidth;
+
+        const visibleCards =
+          Math.floor(
+            containerWidth / cardWidth
+          ) || 1;
+
+        const maxIndex =
+          Math.max(
+            0,
+            cards.length - visibleCards
+          );
+
+        currentIndex =
+          Math.min(
+            Math.max(index, 0),
+            maxIndex
+          );
+
         updateSlider();
+
       }
 
-      nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1));
-      prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1));
+
+      /* BUTTONS */
+
+      nextBtn.addEventListener(
+        'click',
+        () =>
+          goToSlide(
+            currentIndex + 1
+          )
+      );
+
+      prevBtn.addEventListener(
+        'click',
+        () =>
+          goToSlide(
+            currentIndex - 1
+          )
+      );
+
 
       updateSlider();
-      window.addEventListener('resize', updateSlider);
 
-      // Touch support
-      let startX, moveX;
-      track.addEventListener('touchstart', e => startX = e.touches[0].clientX);
-      track.addEventListener('touchmove', e => moveX = e.touches[0].clientX);
-      track.addEventListener('touchend', () => {
-        if (!startX || !moveX) return;
-        const diff = startX - moveX;
-        if (Math.abs(diff) > 50) {
-          if (diff > 0) goToSlide(currentIndex + 1);
-          else goToSlide(currentIndex - 1);
+      window.addEventListener(
+        'resize',
+        updateSlider
+      );
+
+
+      /* TOUCH SUPPORT */
+
+      let startX;
+      let moveX;
+
+      track.addEventListener(
+        'touchstart',
+        e => {
+
+          startX =
+            e.touches[0].clientX;
+
         }
-        startX = null; moveX = null;
-      });
+      );
+
+      track.addEventListener(
+        'touchmove',
+        e => {
+
+          moveX =
+            e.touches[0].clientX;
+
+        }
+      );
+
+      track.addEventListener(
+        'touchend',
+        () => {
+
+          if (!startX || !moveX) {
+            return;
+          }
+
+          const diff =
+            startX - moveX;
+
+          if (Math.abs(diff) > 50) {
+
+            if (diff > 0) {
+
+              goToSlide(
+                currentIndex + 1
+              );
+
+            } else {
+
+              goToSlide(
+                currentIndex - 1
+              );
+
+            }
+
+          }
+
+          startX = null;
+          moveX = null;
+
+        }
+      );
+
     }
+
   </script>
 
 </body>
